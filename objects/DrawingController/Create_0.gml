@@ -2,10 +2,11 @@ drawing = false;
 resetRequested = false;
 currentDrawValue = 100;
 loopsDrawn = 0;
+scaleFactor = 8;
 
 previousMousePosition = new Vector2();
-canvas = surface_create(room_width, room_height, surface_r8unorm);
-collisionChecker = surface_create(room_width / 16, room_height / 16, surface_r8unorm);
+canvas = surface_create(room_width, room_height, surface_rgba8unorm);
+collisionChecker = surface_create(ceil(room_width / scaleFactor), ceil(room_height / scaleFactor), surface_r8unorm);
 
 drawLine = function(startPosition, endPosition, radius)
 {
