@@ -13,12 +13,12 @@ function InputAxis2Keys(right, left, up, down)
 	
 	if (keyboard_check(up))
 	{
-		inputAxis.y++;
+		inputAxis.y--;
 	}
 	
 	if (keyboard_check(down))
 	{
-		inputAxis.y--;
+		inputAxis.y++;
 	}
 	
 	inputAxis.Normalize();

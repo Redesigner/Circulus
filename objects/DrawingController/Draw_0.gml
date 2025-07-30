@@ -44,6 +44,6 @@ if (resetRequested)
 
 draw_surface(canvas, 0, 0)
 draw_surface_ext(collisionChecker, 0, 0, scaleFactor, scaleFactor, 0, c_white, 0.5);
-draw_text(0, 0, $"Loops drawn: {loopsDrawn}");
-draw_text(0, 16, $"Hovered pixel time: {color_get_red(currentPixelColor)}");
-draw_text(0, 32, distance);
+draw_text_ext_transformed(0, 0, $"Loops drawn: {loopsDrawn}", -1, 200, 0.5, 0.5, 0);
+draw_text_ext_transformed(0, 8, $"Hovered pixel time: {color_get_red(currentPixelColor)}", -1, 200, 0.5, 0.5, 0);
+draw_text_ext_transformed(0, 16, distance, -1, 200, 0.5, 0.5, 0);
