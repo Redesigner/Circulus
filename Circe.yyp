@@ -66,6 +66,7 @@
     {"id":{"name":"Sp_LaserWarning","path":"sprites/Sp_LaserWarning/Sp_LaserWarning.yy",},},
     {"id":{"name":"Sp_Rect","path":"sprites/Sp_Rect/Sp_Rect.yy",},},
     {"id":{"name":"Sp_Reticle","path":"sprites/Sp_Reticle/Sp_Reticle.yy",},},
+    {"id":{"name":"Sp_Test_inv","path":"sprites/Sp_Test_inv/Sp_Test_inv.yy",},},
     {"id":{"name":"Sp_Test","path":"sprites/Sp_Test/Sp_Test.yy",},},
     {"id":{"name":"Sp_TestEnemy","path":"sprites/Sp_TestEnemy/Sp_TestEnemy.yy",},},
     {"id":{"name":"Ts_Floors","path":"tilesets/Ts_Floors/Ts_Floors.yy",},},

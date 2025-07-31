@@ -35,5 +35,6 @@
     {"name":"Sp_Laser","order":2,"path":"sprites/Sp_Laser/Sp_Laser.yy",},
     {"name":"Sp_Rect","order":2,"path":"sprites/Sp_Rect/Sp_Rect.yy",},
     {"name":"Sp_Reticle","order":1,"path":"sprites/Sp_Reticle/Sp_Reticle.yy",},
+    {"name":"Sp_Test_inv","order":1,"path":"sprites/Sp_Test_inv/Sp_Test_inv.yy",},
   ],
 }

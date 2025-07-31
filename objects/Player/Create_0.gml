@@ -1,10 +1,13 @@
 event_inherited()
 
-acceleration = 1000;
+acceleration = 2000;
 deceleration = 2000;
-maxSpeed = 100;
+maxSpeed = 80;
+jumpStrength = 125;
+fallSpeed = 300;
 canDoubleJump = true;
-airControlFactor = 0.1;
+airControlFactor = 0.1
+invincible = false;
 hitPoints = 3;
 
 TryJump = function()
@@ -26,7 +29,8 @@ TryJump = function()
 
 Jump = function()
 {
-	velocity.y = 100;
+	velocity.y = jumpStrength;
+	Invincibility(1);
 	grounded = false;
 }
 
@@ -37,7 +41,7 @@ DoubleJump = function()
 	{
 		velocity.x = maxSpeed * inputAxis;
 	}
-	velocity.y = 100;
+	velocity.y = jumpStrength;
 	canDoubleJump = false;
 }
 
@@ -46,20 +50,31 @@ LandOnGround = function()
 	canDoubleJump = true;
 }
 
+Invincibility = function(seconds)
+{
+	invincible = true;
+	object_set_sprite( Player, Sp_Test_inv );
+	alarm[1] = game_get_speed(gamespeed_fps) * seconds; //Frame per seconds
+}
+
 TakeDamage = function(damage)
 {
-	if (damage <= 0)
+	if (!invincible)
 	{
-		return;
-	}
+		if (damage <= 0)
+		{
+			return;
+		}
 	
-	if (hitPoints <= 0)
-	{
-		return;
-	}
+		if (hitPoints <= 0)
+		{
+			return;
+		}
 	
-	hitPoints -= damage;
-	show_debug_message("{0} took damage! {1} health remaining", id, hitPoints);
+		hitPoints -= damage;
+		show_debug_message("{0} took damage! {1} health remaining", id, hitPoints);
+	}
+
 	
 	if (hitPoints <= 0)
 	{
