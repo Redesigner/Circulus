@@ -8,7 +8,7 @@
   "name":"Laser",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ProjectileBase","path":"objects/ProjectileBase/ProjectileBase.yy",},"propertyId":{"name":"hurtboxAsset","path":"objects/ProjectileBase/ProjectileBase.yy",},"resource":{"name":"LaserHurtbox","path":"objects/LaserHurtbox/LaserHurtbox.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"LaserHurtbox",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ProjectileBase","path":"objects/ProjectileBase/ProjectileBase.yy",},"propertyId":{"name":"duration","path":"objects/ProjectileBase/ProjectileBase.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ProjectileBase","path":"objects/ProjectileBase/ProjectileBase.yy",},"propertyId":{"name":"duration","path":"objects/ProjectileBase/ProjectileBase.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.5",},
   ],
   "parent":{
     "name":"Lasers",

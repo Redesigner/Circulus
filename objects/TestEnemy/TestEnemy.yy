@@ -10,11 +10,11 @@
   "overriddenProperties":[],
   "parent":{
     "name":"TestEnemy",
-    "path":"folders/Characters/Enemies/TestEnemy.yy",
+    "path":"folders/Characters/Enemies/BackgroundEnemies/TestEnemy.yy",
   },
   "parentObjectId":{
-    "name":"EnemyBase",
-    "path":"objects/EnemyBase/EnemyBase.yy",
+    "name":"BackgroundEnemy",
+    "path":"objects/BackgroundEnemy/BackgroundEnemy.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
