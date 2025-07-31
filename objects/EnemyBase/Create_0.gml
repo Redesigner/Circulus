@@ -40,6 +40,21 @@ Stun = function(duration)
 		}, id);
 }
 
+Circle = function()
+{
+	TakeDamage(1.0);
+}
+
+Slash = function()
+{
+	Stun(1.0);
+}
+
+Tap = function()
+{
+	Stun(2.0);
+}
+
 Die = function()
 {
 	movementEnabled = false;
