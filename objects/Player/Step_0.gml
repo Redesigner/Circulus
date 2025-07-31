@@ -23,5 +23,5 @@ else
 	velocity.x = clamp(velocity.x + appliedAccelration * DeltaTimeSeconds(), -maxSpeed, maxSpeed);
 }
 
-velocity.y -= 98 * DeltaTimeSeconds();
+velocity.y -= fallSpeed * DeltaTimeSeconds();
 event_inherited()
