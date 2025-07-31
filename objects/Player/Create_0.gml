@@ -30,7 +30,7 @@ TryJump = function()
 Jump = function()
 {
 	velocity.y = jumpStrength;
-	Invincibility(1);
+	Invincibility(0.2);
 	grounded = false;
 }
 
@@ -41,6 +41,7 @@ DoubleJump = function()
 	{
 		velocity.x = maxSpeed * inputAxis;
 	}
+	Invincibility(0.2);
 	velocity.y = jumpStrength;
 	canDoubleJump = false;
 }
