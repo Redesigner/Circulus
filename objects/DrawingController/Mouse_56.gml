@@ -1,3 +1,11 @@
 drawing = false;
 resetRequested = true;
-Slash();
+
+if (currentDrawValue > 4)
+{
+	Slash();
+}
+else
+{
+	Tap();
+}
