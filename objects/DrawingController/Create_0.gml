@@ -1,7 +1,6 @@
 drawing = false;
 resetRequested = false;
 currentDrawValue = 100;
-loopsDrawn = 0;
 scaleFactor = 8;
 
 previousMousePosition = new Vector2();
@@ -36,6 +35,25 @@ CloseLoop = function()
 			if (collisionChecker.GetValue(gridPosition.x, gridPosition.y) == 0)
 			{
 				enemyInstance.TakeDamage(1.0);
+			}
+		});
+	collisionChecker.Clear();
+}
+
+Slash = function()
+{
+	collisionChecker.Grow();
+	
+	var enemies = layer_get_all_elements("Enemies");
+	array_foreach(enemies, function(enemy, index)
+		{
+			var enemyInstance = layer_instance_get_instance(enemy);
+			var gridPosition = GetPositionVector(enemyInstance);
+			gridPosition.DivideByReal(scaleFactor);
+			gridPosition.Floor();
+			if (collisionChecker.GetValue(gridPosition.x, gridPosition.y) > 1)
+			{
+				enemyInstance.TakeDamage(0.5);
 			}
 		});
 	collisionChecker.Clear();

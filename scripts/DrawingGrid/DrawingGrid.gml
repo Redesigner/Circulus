@@ -112,4 +112,41 @@ function DrawingGrid(x, y) constructor
 			}
 		}
 	}
+	
+	static Grow = function()
+	{
+		var stack = array_create(0);
+		
+		for (var gridX = 0; gridX < dimensions.x; ++gridX)
+		{
+			for (var gridY = 0; gridY < dimensions.y; ++gridY)
+			{
+				var currentGridValue = GetValue(gridX, gridY);
+				if (currentGridValue == 0)
+				{
+					continue;
+				}
+				array_push(stack, new Vector2(gridX, gridY));
+			}
+		}
+		
+		while (array_length(stack) > 0)
+		{
+			var currentPixel = array_pop(stack);
+			SetValueMax(new Vector2(currentPixel.x - 1, currentPixel.y), currentPixel);
+			SetValueMax(new Vector2(currentPixel.x + 1, currentPixel.y), currentPixel);
+			SetValueMax(new Vector2(currentPixel.x, currentPixel.y - 1), currentPixel);
+			SetValueMax(new Vector2(currentPixel.x, currentPixel.y + 1), currentPixel);
+		}
+	}
+	
+	static SetValueMax = function(position, referencePosition)
+	{
+		var pixelValue = GetValue(position.x, position.y)
+		var referenceValue = GetValue(referencePosition.x, referencePosition.y);
+		if (referenceValue > pixelValue)
+		{
+			SetValue(position.x, position.y, referenceValue);
+		}
+	}
 }

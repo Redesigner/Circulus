@@ -29,14 +29,16 @@ if (drawing)
 	distance = currentDrawValue - mousedOverValue;
 	if (mousedOverValue > 0 && distance > 5)
 	{
-		++loopsDrawn;
 		drawing = false;
 		resetRequested = true;
+		CloseLoop();
 	}
 	
-	if (currentDrawValue > 120)
+	if (currentDrawValue > 20)
 	{
+		drawing = false;
 		resetRequested = true;
+		Slash();
 	}
 }
 
@@ -49,8 +51,6 @@ if (resetRequested)
 		surface_reset_target();
 	}
 	resetRequested = false;
-	
-	CloseLoop();
 }
 
 if (surface_exists(canvas))
@@ -61,6 +61,5 @@ draw_set_alpha(0.5);
 // collisionChecker.Draw(scaleFactor);
 
 draw_set_alpha(1.0);
-//draw_text_ext_transformed(0, 0, $"Loops drawn: {loopsDrawn}", -1, 200, 0.5, 0.5, 0);
 //draw_text_ext_transformed(0, 8, $"Hovered pixel time: {color_get_red(currentPixelColor)}", -1, 200, 0.5, 0.5, 0);
-draw_text_ext_transformed(0, 16, $"Ink left: {max(120 - currentDrawValue, 0)}" , -1, 700, 0.5, 0.5, 0);
+draw_text_ext_transformed(0, 16, $"Ink left: {max(20 - currentDrawValue, 0)}" , -1, 700, 0.5, 0.5, 0);
