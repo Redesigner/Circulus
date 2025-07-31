@@ -5,10 +5,16 @@ deceleration = 2000;
 maxSpeed = 80;
 jumpStrength = 125;
 fallSpeed = 300;
+dodgeLength = 0.2;
+dodgeSpeed = 175;
+isDodging = false;
 canDoubleJump = true;
 airControlFactor = 0.1
 invincible = false;
 hitPoints = 3;
+input_presses = 0;
+key_pressed_left = keyboard_check_pressed(ord("A"));
+key_pressed_right = keyboard_check_pressed(ord("D"));
 
 TryJump = function()
 {
@@ -55,8 +61,30 @@ Invincibility = function(seconds)
 {
 	invincible = true;
 	sprite_index = Sp_Test_inv;
-	alarm[1] = game_get_speed(gamespeed_fps) * seconds; //Frame per seconds
+	global.gameState.timerManager.Add(seconds, function()
+	{
+		invincible = false;
+		sprite_index = Sp_Test;
+	}, id);
 }
+
+Dodge = function()
+{
+	if (isDodging)
+	{
+		return;
+	}
+	
+	var inputAxis = InputAxis(ord("D"), ord("A"));
+	isDodging = true;
+	velocity.x = dodgeSpeed * inputAxis;
+	Invincibility(dodgeLength);
+	global.gameState.timerManager.Add(dodgeLength, function()
+	{
+		isDodging = false;
+	}, id);
+}
+
 
 TakeDamage = function(damage)
 {
