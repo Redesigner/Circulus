@@ -34,7 +34,7 @@ CloseLoop = function()
 			gridPosition.Floor();
 			if (collisionChecker.GetValue(gridPosition.x, gridPosition.y) == 0)
 			{
-				enemyInstance.TakeDamage(1.0);
+				enemyInstance.Circle();
 			}
 		});
 	collisionChecker.Clear();
@@ -59,7 +59,7 @@ Slash = function()
 	
 	array_foreach(enemiesHitTotal, function(enemy, index)
 		{
-			enemy.TakeDamage(0.5);
+			enemy.Slash();
 		}
 	);
 	collisionChecker.Clear();
@@ -75,8 +75,7 @@ Tap = function()
 	for (var i = 0; i < enemyCount; ++i)
 	{
 		var enemy = ds_list_find_value(enemiesHit, i);
-		enemy.hitPoints += 1;
-		enemy.Stun(5);
+		enemy.Tap();
 	}
 	collisionChecker.Clear();
 }

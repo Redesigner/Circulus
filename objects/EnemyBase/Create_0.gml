@@ -8,6 +8,7 @@ onDeath = new Delegate();
 fireTimerCurrent = 0;
 fireTimer = random_range(fireRateMin, fireRateMax);
 isStunned = false;
+stunTimer = -1;
 
 TakeDamage = function(damage)
 {
@@ -33,11 +34,32 @@ TakeDamage = function(damage)
 
 Stun = function(duration)
 {
+	if (isStunned)
+	{
+		stunTimer.Reset();
+		return;
+	}
+	
 	isStunned = true;
-	global.gameState.timerManager.Add(duration, function()
+	stunTimer = global.gameState.timerManager.Add(duration, function()
 		{
 			isStunned = false;
 		}, id);
+}
+
+Circle = function()
+{
+	TakeDamage(1.0);
+}
+
+Slash = function()
+{
+	Stun(1.0);
+}
+
+Tap = function()
+{
+	Stun(2.0);
 }
 
 Die = function()

@@ -11,7 +11,7 @@
     {"name":"inst_147CB70E","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_76CC15A0","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_4523042F","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_2FCDFBA5","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_301F2605","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -29,9 +29,7 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyBase","path":"objects/EnemyBase/EnemyBase.yy",},"propertyId":{"name":"fireRateMax","path":"objects/EnemyBase/EnemyBase.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":96.0,},
         {"$GMRInstance":"v2","%Name":"inst_4523042F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4523042F","objectId":{"name":"TestEnemy","path":"objects/TestEnemy/TestEnemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":96.0,},
-        {"$GMRInstance":"v2","%Name":"inst_2FCDFBA5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2FCDFBA5","objectId":{"name":"TestEnemy","path":"objects/TestEnemy/TestEnemy.yy",},"properties":[
-            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyBase","path":"objects/EnemyBase/EnemyBase.yy",},"propertyId":{"name":"projectileAsset","path":"objects/EnemyBase/EnemyBase.yy",},"resource":{"name":"Laser","path":"objects/Laser/Laser.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Laser",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":64.0,},
+        {"$GMRInstance":"v2","%Name":"inst_301F2605","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_301F2605","objectId":{"name":"CloudEnemy","path":"objects/CloudEnemy/CloudEnemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":288.0,"y":64.0,},
       ],"layers":[],"name":"Enemies","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Floor","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Floor","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":12,"SerialiseWidth":40,"TileCompressedData":[
           -2,0,-37,-2147483648,3,1,0,0,-37,-2147483648,2,1,0,-38,-2147483648,2,1,0,-38,-2147483648,2,1,0,-38,-2147483648,
