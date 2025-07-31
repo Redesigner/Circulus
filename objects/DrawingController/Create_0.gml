@@ -42,19 +42,40 @@ CloseLoop = function()
 
 Slash = function()
 {
-	collisionChecker.Grow();
+	// collisionChecker.Grow();
 	
-	var enemies = layer_get_all_elements("Enemies");
-	array_foreach(enemies, function(enemy, index)
+	var enemiesHitTotal = array_create(0);
+	var enemiesHit = ds_list_create();
+	var pixels = collisionChecker.GetPixels();
+	var pixelCount = array_length(pixels);
+	for (var i = 0; i < pixelCount; ++i)
+	{
+		var currentPixel = pixels[i];
+		currentPixel.MultiplyReal(scaleFactor);
+		collision_circle_list(currentPixel.x, currentPixel.y, scaleFactor, EnemyBase, false, true, enemiesHit, false);
+		ArrayPushUniqueList(enemiesHitTotal, enemiesHit);
+		ds_list_clear(enemiesHit)
+	}
+	
+	array_foreach(enemiesHitTotal, function(enemy, index)
 		{
-			var enemyInstance = layer_instance_get_instance(enemy);
-			var gridPosition = GetPositionVector(enemyInstance);
-			gridPosition.DivideByReal(scaleFactor);
-			gridPosition.Floor();
-			if (collisionChecker.GetValue(gridPosition.x, gridPosition.y) > 1)
-			{
-				enemyInstance.TakeDamage(0.5);
-			}
-		});
+			enemy.TakeDamage(0.5);
+		}
+	);
+	collisionChecker.Clear();
+}
+
+Tap = function()
+{
+	var enemiesHit = ds_list_create();
+	
+	collision_circle_list(mouse_x, mouse_y, scaleFactor * 2, EnemyBase, false, true, enemiesHit, false);
+	
+	var enemyCount = ds_list_size(enemiesHit);
+	for (var i = 0; i < enemyCount; ++i)
+	{
+		var enemy = ds_list_find_value(enemiesHit, i);
+		enemy.hitPoints += 1;
+	}
 	collisionChecker.Clear();
 }

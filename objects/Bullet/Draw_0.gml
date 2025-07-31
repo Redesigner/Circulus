@@ -1,8 +1,8 @@
-var alpha = currentLifetime / lifetime;
+var alpha = currentLifetime / duration;
 if (alpha > 0.5)
 {
 	alpha *= 1;
 }
-var drawPosition = LerpVector2(GetPositionVector(id), targetPosition, alpha);
+var drawPosition = LerpVector2(origin, GetPositionVector(id), alpha);
 draw_sprite_ext(sprite_index, image_index, drawPosition.x, drawPosition.y, alpha, alpha, 0, c_white, 1.0);
-draw_sprite(Sp_Reticle, 1, targetPosition.x, targetPosition.y);
+draw_sprite(Sp_Reticle, 1, x, y);

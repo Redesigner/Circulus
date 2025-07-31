@@ -149,4 +149,23 @@ function DrawingGrid(x, y) constructor
 			SetValue(position.x, position.y, referenceValue);
 		}
 	}
+	
+	static GetPixels = function()
+	{
+		var stack = array_create(0);
+		
+		for (var gridX = 0; gridX < dimensions.x; ++gridX)
+		{
+			for (var gridY = 0; gridY < dimensions.y; ++gridY)
+			{
+				var currentGridValue = GetValue(gridX, gridY);
+				if (currentGridValue == 0)
+				{
+					continue;
+				}
+				array_push(stack, new Vector2(gridX, gridY));
+			}
+		}
+		return stack;
+	}
 }

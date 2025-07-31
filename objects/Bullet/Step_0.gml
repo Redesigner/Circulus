@@ -1,1 +1,0 @@
-currentLifetime += DeltaTimeSeconds();

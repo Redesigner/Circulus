@@ -59,7 +59,9 @@ if (surface_exists(canvas))
 }
 draw_set_alpha(0.5);
 // collisionChecker.Draw(scaleFactor);
-
+draw_set_color(c_white);
+var camera = view_get_camera(0);
+var cameraX = camera_get_view_x(camera);
 draw_set_alpha(1.0);
 //draw_text_ext_transformed(0, 8, $"Hovered pixel time: {color_get_red(currentPixelColor)}", -1, 200, 0.5, 0.5, 0);
-draw_text_ext_transformed(0, 16, $"Ink left: {max(20 - currentDrawValue, 0)}" , -1, 700, 0.5, 0.5, 0);
+draw_text_ext_transformed(cameraX, 16, $"Ink left: {max(20 - currentDrawValue, 0)}" , -1, 700, 0.5, 0.5, 0);

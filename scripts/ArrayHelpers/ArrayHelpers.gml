@@ -11,3 +11,16 @@ function ArrayEraseIf(arrayId, evaluator)
 	}
 	return erasedCount;
 }
+
+function ArrayPushUniqueList(arrayId, list)
+{
+	var listLength = ds_list_size(list);
+	for (var i = 0; i < listLength; ++i)
+	{
+		var newEntry = ds_list_find_value(list, i);
+		if (!array_contains(arrayId, newEntry))
+		{
+			array_push(arrayId, newEntry);
+		}
+	}
+}
