@@ -12,6 +12,8 @@
   "Folders":[
     {"$GMFolder":"","%Name":"Characters","folderPath":"folders/Characters.yy","name":"Characters","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Enemies","folderPath":"folders/Characters/Enemies.yy","name":"Enemies","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Bullets","folderPath":"folders/Characters/Enemies/Bullets.yy","name":"Bullets","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Characters/Enemies/Bullets/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"TestEnemy","folderPath":"folders/Characters/Enemies/TestEnemy.yy","name":"TestEnemy","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/Characters/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Characters/Player/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -34,6 +36,7 @@
   },
   "name":"DrawingTest",
   "resources":[
+    {"id":{"name":"Bullet","path":"objects/Bullet/Bullet.yy",},},
     {"id":{"name":"Character","path":"objects/Character/Character.yy",},},
     {"id":{"name":"DrawingController","path":"objects/DrawingController/DrawingController.yy",},},
     {"id":{"name":"EnemyBase","path":"objects/EnemyBase/EnemyBase.yy",},},
@@ -47,6 +50,7 @@
     {"id":{"name":"InputAxis","path":"scripts/InputAxis/InputAxis.yy",},},
     {"id":{"name":"Time","path":"scripts/Time/Time.yy",},},
     {"id":{"name":"Vector2","path":"scripts/Vector2/Vector2.yy",},},
+    {"id":{"name":"Sp_Bullet","path":"sprites/Sp_Bullet/Sp_Bullet.yy",},},
     {"id":{"name":"Sp_Floors","path":"sprites/Sp_Floors/Sp_Floors.yy",},},
     {"id":{"name":"Sp_Test","path":"sprites/Sp_Test/Sp_Test.yy",},},
     {"id":{"name":"Sp_TestEnemy","path":"sprites/Sp_TestEnemy/Sp_TestEnemy.yy",},},

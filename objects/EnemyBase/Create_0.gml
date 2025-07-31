@@ -2,7 +2,7 @@ event_inherited();
 
 hitPoints = 3;
 dead = false;
-
+target = instance_find(Player, 0);
 onDeath = new Delegate();
 
 TakeDamage = function(damage)
@@ -38,4 +38,13 @@ Die = function()
 	}
 	call_later(0.5, time_source_units_seconds,  destroySelf);
 	onDeath.Invoke();
+	call_cancel(fireCallbackHandle);
 }
+
+FireBullet = function()
+{
+	var newBullet = instance_create_layer(x, y, "Projectiles", Bullet);
+	newBullet.velocity = GetPositionVector(id).Minus(GetPositionVector(target)).Normalized().TimesReal(-40);
+}
+
+fireCallbackHandle = call_later(random_range(2.0, 4.0), time_source_units_seconds, FireBullet, true);
