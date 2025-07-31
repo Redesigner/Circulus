@@ -1,2 +1,2 @@
 invincible = false;
-object_set_sprite( Player, Sp_Test );
+sprite_index = Sp_Test;

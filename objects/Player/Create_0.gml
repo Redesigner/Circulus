@@ -53,7 +53,7 @@ LandOnGround = function()
 Invincibility = function(seconds)
 {
 	invincible = true;
-	object_set_sprite( Player, Sp_Test_inv );
+	sprite_index = Sp_Test_inv;
 	alarm[1] = game_get_speed(gamespeed_fps) * seconds; //Frame per seconds
 }
 
