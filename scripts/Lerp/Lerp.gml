@@ -1,6 +1,7 @@
 
 /// @param {Struct.Vector2} valueA
 /// @param {Struct.Vector2} valueB
+/// @return {Struct.Vector2} value
 function LerpVector2(valueA, valueB, alpha)
 {
 	var delta = valueA.Minus(valueB);
