@@ -2,18 +2,22 @@
   "$GMObject":"",
   "%Name":"Bullet",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"Bullet",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ProjectileBase","path":"objects/ProjectileBase/ProjectileBase.yy",},"propertyId":{"name":"hurtBoxDuration","path":"objects/ProjectileBase/ProjectileBase.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.2",},
+  ],
   "parent":{
     "name":"Bullets",
-    "path":"folders/Characters/Enemies/Bullets.yy",
+    "path":"folders/Characters/Enemies/Projectiles/Bullets.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"ProjectileBase",
+    "path":"objects/ProjectileBase/ProjectileBase.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

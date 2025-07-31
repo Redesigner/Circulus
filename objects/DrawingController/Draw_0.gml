@@ -58,8 +58,8 @@ if (surface_exists(canvas))
 	draw_surface(canvas, 0, 0)
 }
 draw_set_alpha(0.5);
-collisionChecker.Draw(scaleFactor);
-
+// collisionChecker.Draw(scaleFactor);
+draw_set_color(c_white);
 var camera = view_get_camera(0);
 var cameraX = camera_get_view_x(camera);
 draw_set_alpha(1.0);

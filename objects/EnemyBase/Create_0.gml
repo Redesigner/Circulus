@@ -43,9 +43,10 @@ Die = function()
 
 FireBullet = function()
 {
-	var newBullet = instance_create_layer(x, y, "Projectiles", Bullet);
 	var targetPosition = GetPositionVector(target);
-	newBullet.targetPosition = targetPosition;
+	var newBullet = instance_create_layer(targetPosition.x, targetPosition.y, "Projectiles", Bullet);
+	newBullet.origin.x = x;
+	newBullet.origin.y = y;
 	newBullet.SetLifetime(1.0);
 }
 
