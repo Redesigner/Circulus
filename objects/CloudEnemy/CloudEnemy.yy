@@ -1,10 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"CloudEnemy",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"CloudEnemy",
   "overriddenProperties":[
@@ -15,8 +12,8 @@
     "path":"folders/Characters/Enemies/ForegroundEnemies/Cloud.yy",
   },
   "parentObjectId":{
-    "name":"EnemyBase",
-    "path":"objects/EnemyBase/EnemyBase.yy",
+    "name":"ForegroundEnemy",
+    "path":"objects/ForegroundEnemy/ForegroundEnemy.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
