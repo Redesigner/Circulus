@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"EnemyBase",
+  "%Name":"TestEnemy",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"EnemyBase",
+  "name":"TestEnemy",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Characters/Enemies.yy",
+    "name":"TestEnemy",
+    "path":"folders/Characters/Enemies/TestEnemy.yy",
   },
   "parentObjectId":{
-    "name":"Character",
-    "path":"objects/Character/Character.yy",
+    "name":"EnemyBase",
+    "path":"objects/EnemyBase/EnemyBase.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Sp_TestEnemy",
+    "path":"sprites/Sp_TestEnemy/Sp_TestEnemy.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

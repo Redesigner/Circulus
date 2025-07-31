@@ -61,6 +61,12 @@ function Vector2(_x = 0, _y = 0) constructor
 		y /= _vec2.y;
 	}
 	
+	static DivideByReal = function(value)
+	{
+		x /= value;
+		y /= value;
+	}
+	
 	static DividedByReal = function(value)
 	{
 		return new Vector2(x / value, y / value);
@@ -107,9 +113,22 @@ function Vector2(_x = 0, _y = 0) constructor
 		y /= length;
 	}
 	
+	static Normalized = function()
+	{
+		var result = new Vector2(x, y);
+		result.Normalize();
+		return result;
+	}
+	
 	static IsZero = function()
 	{
 		return x == 0.0 && y == 0.0;
+	}
+	
+	static Floor = function()
+	{
+		x = floor(x);
+		y = floor(y);
 	}
 	
 	static ToDirection = function()

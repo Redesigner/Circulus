@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"InputAxis2DKeys",
+  "%Name":"DrawingGrid",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"InputAxis2DKeys",
+  "name":"DrawingGrid",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

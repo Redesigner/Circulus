@@ -6,3 +6,4 @@ Move = function(delta)
 {
 	move_and_collide(delta.x, delta.y, collisionLayer);
 }
+
