@@ -5,6 +5,9 @@ dead = false;
 target = instance_find(Player, 0);
 onDeath = new Delegate();
 
+fireTimerCurrent = 0;
+fireTimer = random_range(fireRateMin, fireRateMax);
+
 TakeDamage = function(damage)
 {
 	if (damage <= 0)
@@ -52,5 +55,3 @@ FireBullet = function()
 		newBullet.origin.y = y;
 	}
 }
-
-fireCallbackHandle = call_later(random_range(2.0, 4.0), time_source_units_seconds, FireBullet, true);
