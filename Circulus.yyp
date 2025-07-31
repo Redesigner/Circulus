@@ -1,6 +1,6 @@
 {
   "$GMProject":"v1",
-  "%Name":"DrawingTest",
+  "%Name":"Circulus",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -34,7 +34,7 @@
   "MetaData":{
     "IDEVersion":"2024.13.1.193",
   },
-  "name":"DrawingTest",
+  "name":"Circulus",
   "resources":[
     {"id":{"name":"Bullet","path":"objects/Bullet/Bullet.yy",},},
     {"id":{"name":"Character","path":"objects/Character/Character.yy",},},
@@ -48,10 +48,12 @@
     {"id":{"name":"Delegate","path":"scripts/Delegate/Delegate.yy",},},
     {"id":{"name":"DrawingGrid","path":"scripts/DrawingGrid/DrawingGrid.yy",},},
     {"id":{"name":"InputAxis","path":"scripts/InputAxis/InputAxis.yy",},},
+    {"id":{"name":"Lerp","path":"scripts/Lerp/Lerp.yy",},},
     {"id":{"name":"Time","path":"scripts/Time/Time.yy",},},
     {"id":{"name":"Vector2","path":"scripts/Vector2/Vector2.yy",},},
     {"id":{"name":"Sp_Bullet","path":"sprites/Sp_Bullet/Sp_Bullet.yy",},},
     {"id":{"name":"Sp_Floors","path":"sprites/Sp_Floors/Sp_Floors.yy",},},
+    {"id":{"name":"Sp_Reticle","path":"sprites/Sp_Reticle/Sp_Reticle.yy",},},
     {"id":{"name":"Sp_Test","path":"sprites/Sp_Test/Sp_Test.yy",},},
     {"id":{"name":"Sp_TestEnemy","path":"sprites/Sp_TestEnemy/Sp_TestEnemy.yy",},},
     {"id":{"name":"Ts_Floors","path":"tilesets/Ts_Floors/Ts_Floors.yy",},},

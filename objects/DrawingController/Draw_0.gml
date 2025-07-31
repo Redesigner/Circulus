@@ -58,7 +58,7 @@ if (surface_exists(canvas))
 	draw_surface(canvas, 0, 0)
 }
 draw_set_alpha(0.5);
-collisionChecker.Draw(scaleFactor);
+// collisionChecker.Draw(scaleFactor);
 
 draw_set_alpha(1.0);
 //draw_text_ext_transformed(0, 0, $"Loops drawn: {loopsDrawn}", -1, 200, 0.5, 0.5, 0);

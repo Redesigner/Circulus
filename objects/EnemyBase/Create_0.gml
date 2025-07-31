@@ -44,7 +44,9 @@ Die = function()
 FireBullet = function()
 {
 	var newBullet = instance_create_layer(x, y, "Projectiles", Bullet);
-	newBullet.velocity = GetPositionVector(id).Minus(GetPositionVector(target)).Normalized().TimesReal(-40);
+	var targetPosition = GetPositionVector(target);
+	newBullet.targetPosition = targetPosition;
+	newBullet.SetLifetime(1.0);
 }
 
 fireCallbackHandle = call_later(random_range(2.0, 4.0), time_source_units_seconds, FireBullet, true);

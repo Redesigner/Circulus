@@ -4,6 +4,7 @@ acceleration = 1000;
 deceleration = 2000;
 maxSpeed = 100;
 canDoubleJump = true;
+airControlFactor = 0.1;
 
 TryJump = function()
 {
@@ -30,6 +31,11 @@ Jump = function()
 
 DoubleJump = function()
 {
+	var inputAxis = InputAxis(ord("D"), ord("A"));
+	if (abs(inputAxis) > 0.1)
+	{
+		velocity.x = maxSpeed * inputAxis;
+	}
 	velocity.y = 100;
 	canDoubleJump = false;
 }
