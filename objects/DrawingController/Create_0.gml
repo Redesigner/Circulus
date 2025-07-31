@@ -76,6 +76,7 @@ Tap = function()
 	{
 		var enemy = ds_list_find_value(enemiesHit, i);
 		enemy.hitPoints += 1;
+		enemy.Stun(5);
 	}
 	collisionChecker.Clear();
 }

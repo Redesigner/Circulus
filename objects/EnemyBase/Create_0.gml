@@ -7,6 +7,7 @@ onDeath = new Delegate();
 
 fireTimerCurrent = 0;
 fireTimer = random_range(fireRateMin, fireRateMax);
+isStunned = false;
 
 TakeDamage = function(damage)
 {
@@ -30,6 +31,15 @@ TakeDamage = function(damage)
 	}
 }
 
+Stun = function(duration)
+{
+	isStunned = true;
+	global.gameState.timerManager.Add(duration, function()
+		{
+			isStunned = false;
+		}, id);
+}
+
 Die = function()
 {
 	movementEnabled = false;
@@ -41,7 +51,6 @@ Die = function()
 	}
 	call_later(0.5, time_source_units_seconds,  destroySelf);
 	onDeath.Invoke();
-	call_cancel(fireCallbackHandle);
 }
 
 FireBullet = function()
