@@ -31,6 +31,7 @@
         "GMObject",
       ],"listItems":[],"multiselect":false,"name":"hurtboxAsset","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"Hurtbox","path":"objects/Hurtbox/Hurtbox.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Hurtbox","varType":5,},
     {"$GMObjectProperty":"v1","%Name":"hurtBoxDuration","filters":[],"listItems":[],"multiselect":false,"name":"hurtBoxDuration","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"duration","filters":[],"listItems":[],"multiselect":false,"name":"duration","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

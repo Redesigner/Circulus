@@ -44,10 +44,13 @@ Die = function()
 FireBullet = function()
 {
 	var targetPosition = GetPositionVector(target);
-	var newBullet = instance_create_layer(targetPosition.x, targetPosition.y, "Projectiles", Bullet);
-	newBullet.origin.x = x;
-	newBullet.origin.y = y;
-	newBullet.SetLifetime(1.0);
+	var newBullet = instance_create_layer(targetPosition.x, targetPosition.y, "Projectiles", projectileAsset);
+	
+	if (object_is_ancestor(projectileAsset, Bullet) || projectileAsset == Bullet)
+	{
+		newBullet.origin.x = x;
+		newBullet.origin.y = y;
+	}
 }
 
 fireCallbackHandle = call_later(random_range(2.0, 4.0), time_source_units_seconds, FireBullet, true);

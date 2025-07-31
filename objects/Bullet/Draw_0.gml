@@ -1,4 +1,4 @@
-var alpha = currentLifetime / lifetime;
+var alpha = currentLifetime / duration;
 if (alpha > 0.5)
 {
 	alpha *= 1;

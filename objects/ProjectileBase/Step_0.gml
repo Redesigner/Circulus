@@ -3,13 +3,8 @@ if (global.paused)
 	return;
 }
 
-if (!active)
-{
-	return;
-}
-
 currentLifetime += DeltaTimeSeconds();
-if (currentLifetime > lifetime)
+if (currentLifetime > duration)
 {
 	SpawnHurtbox();
 	instance_destroy(id);
