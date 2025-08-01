@@ -1,3 +1,15 @@
+if (global.paused)
+{
+	return;
+}
+
+// This should probably be temporary, but it makes sure the character doesn't fall off the screen and get stuck
+if (y > room_height + 32)
+{
+	y = 0;
+	velocity.y = 0;
+}
+
 var input = InputAxis(ord("D"), ord("A"));
 
 if (abs(input) < 0.1)
@@ -61,4 +73,23 @@ if (grounded)
 	}
 
 velocity.y -= fallSpeed * DeltaTimeSeconds();
+
+if (velocity.y < 0 && !grounded)
+{
+	var enemiesHit = SweepEnemies();
+	var numEnemiesHit = ds_list_size(enemiesHit);
+	if (numEnemiesHit > 0)
+	{
+		for (var i = 0; i < numEnemiesHit; ++i)
+		{
+			var enemy = ds_list_find_value(enemiesHit, i);
+			if (enemy.bbox_top + 2 >= bbox_bottom) // give 2 units of "grace"
+			{
+				enemy.Stomp();
+				velocity.y = jumpStrength;
+			}
+		}
+	}
+}
+
 event_inherited()

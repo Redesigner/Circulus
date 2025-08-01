@@ -112,3 +112,39 @@ TakeDamage = function(damage)
 		// Die();
 	}
 }
+
+SweepEnemies = function()
+{
+	var enemies = ds_list_create();
+	
+	var delta = velocity.TimesReal(DeltaTimeSeconds());
+	delta.y *= -1; // velocity y is inverted
+	
+	if (delta.y > 0)
+	{
+		if (delta.x > 0)
+		{
+			// Check our box, extended right and down
+			collision_rectangle_list(bbox_left, bbox_top, bbox_right + delta.x, bbox_bottom + delta.y, Goomba, false, true, enemies, false);
+		}
+		else
+		{
+			// Box, extended left and down
+			collision_rectangle_list(bbox_left + delta.x, bbox_top, bbox_right, bbox_bottom + delta.y, Goomba, false, true, enemies, false);
+		}
+	}
+	else
+	{
+		if (delta.x > 0)
+		{
+			// Box, extended right and up
+			collision_rectangle_list(bbox_left, bbox_top + delta.y, bbox_right + delta.x, bbox_bottom, Goomba, false, true, enemies, false);
+		}
+		else
+		{
+			// Box, extended left and up
+			collision_rectangle_list(bbox_left + delta.x, bbox_top + delta.y, bbox_right, bbox_bottom, Goomba, false, true, enemies, false);
+		}
+	}
+	return enemies;
+}
