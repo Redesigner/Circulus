@@ -11,6 +11,8 @@
     {"name":"Sprites","order":1,"path":"folders/Characters/Enemies/ForegroundEnemies/Cloud/Sprites.yy",},
     {"name":"Goomba","order":3,"path":"folders/Characters/Enemies/ForegroundEnemies/Goomba.yy",},
     {"name":"Greatswordsmin","order":5,"path":"folders/Characters/Enemies/ForegroundEnemies/Goomba/Greatswordsmin.yy",},
+    {"name":"Helmer","order":6,"path":"folders/Characters/Enemies/ForegroundEnemies/Goomba/Helmer.yy",},
+    {"name":"Sprites","order":1,"path":"folders/Characters/Enemies/ForegroundEnemies/Goomba/Helmer/Sprites.yy",},
     {"name":"Sprites","order":2,"path":"folders/Characters/Enemies/ForegroundEnemies/Goomba/Sprites.yy",},
     {"name":"Swordsmin","order":3,"path":"folders/Characters/Enemies/ForegroundEnemies/Goomba/Swordsmin.yy",},
     {"name":"Projectiles","order":3,"path":"folders/Characters/Enemies/Projectiles.yy",},

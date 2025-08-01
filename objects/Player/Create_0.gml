@@ -91,7 +91,7 @@ Dodge = function()
 }
 
 
-TakeDamage = function(damage)
+TakeDamage = function(damage, hitNormal = new Vector2())
 {
 	if (invincible || damageInv)
 	{
@@ -109,6 +109,11 @@ TakeDamage = function(damage)
 	}
 	
 	hitPoints -= damage;
+	
+	
+	if (hitNormal)
+	{
+	}
 	
 	if (hitPoints <= 0)
 	{
