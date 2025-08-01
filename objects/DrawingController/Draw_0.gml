@@ -50,6 +50,7 @@ if (resetRequested)
 		draw_clear_alpha(c_black, c_black);
 		surface_reset_target();
 	}
+	currentDrawValue = 0;
 	resetRequested = false;
 }
 
@@ -64,4 +65,4 @@ var camera = view_get_camera(0);
 var cameraX = camera_get_view_x(camera);
 draw_set_alpha(1.0);
 //draw_text_ext_transformed(0, 8, $"Hovered pixel time: {color_get_red(currentPixelColor)}", -1, 200, 0.5, 0.5, 0);
-draw_text_ext_transformed(cameraX, 16, $"Ink left: {max(20 - currentDrawValue, 0)}" , -1, 700, 0.5, 0.5, 0);
+//draw_text_ext_transformed(cameraX, 16, $"Ink left: {max(20 - currentDrawValue, 0)}" , -1, 700, 0.5, 0.5, 0);

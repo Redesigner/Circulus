@@ -1,0 +1,1 @@
+percentage = player.hitPoints / player.maxHitPoints;
