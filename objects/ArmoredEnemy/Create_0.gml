@@ -20,3 +20,6 @@ Tap = function()
 {
 	Stun(4.0);
 }
+
+followTargetPosition = GetPositionVector(id);
+acceleration = 0;

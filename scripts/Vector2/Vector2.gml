@@ -72,6 +72,15 @@ function Vector2(_x = 0, _y = 0) constructor
 		return new Vector2(x / value, y / value);
 	}
 	
+	static ClampLength = function(length)
+	{
+		if (LengthSquared() > length * length)
+		{
+			Normalize();
+			MultiplyReal(length);
+		}
+	}
+	
 	static Dot = function(_vec2)
 	{
 		return x * _vec2.x + y * _vec2.y;
