@@ -1,0 +1,1 @@
+sprite_index = isStunned ? Sp_ArmoredEnemyPh_Stunned : Sp_ArmoredEnemyPh;

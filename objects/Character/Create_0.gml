@@ -1,6 +1,7 @@
 velocity = new Vector2();
 collisionLayer = layer_tilemap_get_id("Floor");
 grounded = false;
+maxHitPoints = 3;
 
 LandOnGround = function() {};
 

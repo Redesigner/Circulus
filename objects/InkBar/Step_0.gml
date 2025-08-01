@@ -1,0 +1,1 @@
+percentage = (20 - drawingController.currentDrawValue) / 20;

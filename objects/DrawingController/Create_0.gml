@@ -1,6 +1,6 @@
 drawing = false;
 resetRequested = false;
-currentDrawValue = 100;
+currentDrawValue = 0;
 scaleFactor = 8;
 
 previousMousePosition = new Vector2();

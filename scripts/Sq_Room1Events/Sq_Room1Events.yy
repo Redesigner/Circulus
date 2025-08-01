@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Sq_Room1Events",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Sq_Room1Events",
+  "parent":{
+    "name":"Sequences",
+    "path":"folders/Sequences.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
