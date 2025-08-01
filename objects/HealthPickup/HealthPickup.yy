@@ -1,21 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"Goomba",
+  "%Name":"HealthPickup",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":72,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Goomba",
+  "name":"HealthPickup",
   "overriddenProperties":[],
   "parent":{
-    "name":"Goomba",
-    "path":"folders/Characters/Enemies/ForegroundEnemies/Goomba.yy",
+    "name":"Health",
+    "path":"folders/Objects/Pickups/Health.yy",
   },
   "parentObjectId":{
-    "name":"EnemyBase",
-    "path":"objects/EnemyBase/EnemyBase.yy",
+    "name":"Pickup",
+    "path":"objects/Pickup/Pickup.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -35,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sp_Goomba",
-    "path":"sprites/Sp_Goomba/Sp_Goomba.yy",
+    "name":"Sp_HealthPickup",
+    "path":"sprites/Sp_HealthPickup/Sp_HealthPickup.yy",
   },
   "spriteMaskId":null,
   "visible":true,

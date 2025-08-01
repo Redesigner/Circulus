@@ -72,6 +72,8 @@ Die = function()
 		instance_destroy(id);
 	}
 	call_later(0.5, time_source_units_seconds,  destroySelf);
+	
+	instance_create_layer(x, (bbox_top + bbox_bottom) / 2, layer, HealthPickup);
 	onDeath.Invoke();
 }
 
