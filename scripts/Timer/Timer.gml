@@ -42,7 +42,6 @@ function TimerManager() constructor
 {
 	timers = array_create(0);
 	
-	
 	/// @param {Real} _duration
 	/// @param {function} _callback
 	/// @param {Struct|Id.Instance} _owner

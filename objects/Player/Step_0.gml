@@ -74,22 +74,49 @@ if (grounded)
 
 velocity.y -= fallSpeed * DeltaTimeSeconds();
 
+var enemiesHit = 0;
+var sweepingEnemies = false;
+var delta = velocity.TimesReal(DeltaTimeSeconds());
+delta.y = -delta.y;
 if (velocity.y < 0 && !grounded)
 {
-	var enemiesHit = SweepEnemies();
+	enemiesHit = Sweep(delta, Goomba);
 	var numEnemiesHit = ds_list_size(enemiesHit);
-	if (numEnemiesHit > 0)
+	for (var i = 0; i < numEnemiesHit; ++i)
 	{
-		for (var i = 0; i < numEnemiesHit; ++i)
+		var enemy = ds_list_find_value(enemiesHit, i);
+		if (enemy.bbox_top + 2 >= bbox_bottom) // give 2 units of "grace"
 		{
-			var enemy = ds_list_find_value(enemiesHit, i);
-			if (enemy.bbox_top + 2 >= bbox_bottom) // give 2 units of "grace"
-			{
-				enemy.Stomp();
-				velocity.y = jumpStrength;
-			}
+			enemy.Stomp();
+			velocity.y = jumpStrength;
 		}
 	}
 }
+else if (grounded)
+{
+	sweepingEnemies = true;
+	enemiesHit = Sweep(delta, Goomba);
+}
 
 event_inherited()
+
+var numEnemiesHit = ds_list_size(enemiesHit);
+
+if (sweepingEnemies)
+{
+	for (var i = 0; i < numEnemiesHit; ++i)
+	{
+		var enemy = ds_list_find_value(enemiesHit, i);
+		
+		if (velocity.x > 0)
+		{
+			// enemy.x += bbox_right - enemy.bbox_left;
+			enemy.Push(new Vector2(bbox_right - enemy.bbox_left, 0), Goomba);
+		}
+		else
+		{
+			// enemy.x += bbox_left - enemy.bbox_right;
+			enemy.Push(new Vector2(bbox_left - enemy.bbox_right, 0), Goomba);
+		}
+	}
+}

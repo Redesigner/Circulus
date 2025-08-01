@@ -4,7 +4,9 @@
   "eventList":[],
   "managed":true,
   "name":"LaserHurtbox",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Hurtbox","path":"objects/Hurtbox/Hurtbox.yy",},"propertyId":{"name":"duration","path":"objects/Hurtbox/Hurtbox.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.5",},
+  ],
   "parent":{
     "name":"Lasers",
     "path":"folders/Characters/Enemies/Projectiles/Lasers.yy",

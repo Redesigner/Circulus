@@ -28,4 +28,62 @@ Move = function(delta)
 	}
 }
 
+/// @param {Struct.Vector2} delta
+/// @param {Id.TileMapElement | Asset.GMObject | Id.Instance | Constant.All | Constant.Array | Array} target
+Sweep = function(delta, target)
+{
+	var enemies = ds_list_create();
+	
+	if (delta.y > 0)
+	{
+		if (delta.x > 0)
+		{
+			// Check our box, extended right and down
+			collision_rectangle_list(bbox_left, bbox_top, bbox_right + delta.x, bbox_bottom + delta.y, target, false, true, enemies, false);
+		}
+		else
+		{
+			// Box, extended left and down
+			collision_rectangle_list(bbox_left + delta.x, bbox_top, bbox_right, bbox_bottom + delta.y, target, false, true, enemies, false);
+		}
+	}
+	else
+	{
+		if (delta.x > 0)
+		{
+			// Box, extended right and up
+			collision_rectangle_list(bbox_left, bbox_top + delta.y, bbox_right + delta.x, bbox_bottom, target, false, true, enemies, false);
+		}
+		else
+		{
+			// Box, extended left and up
+			collision_rectangle_list(bbox_left + delta.x, bbox_top + delta.y, bbox_right, bbox_bottom, target, false, true, enemies, false);
+		}
+	}
+	return enemies;
+}
 
+/// @param {Struct.Vector2} delta
+/// @param {Id.TileMapElement | Asset.GMObject | Id.Instance | Constant.All | Constant.Array | Array} target
+Push = function(delta, target)
+{
+	x += delta.x;
+	y += delta.y;
+	var enemiesHit = Sweep(delta, target)
+	var numEnemies = ds_list_size(enemiesHit);
+	
+	for (i = 0; i < numEnemies; ++i)
+	{
+		var enemy = ds_list_find_value(enemiesHit, i);
+		if (delta.x > 0)
+		{
+			// enemy.x += bbox_right - enemy.bbox_left;
+			enemy.Push(new Vector2(bbox_right - enemy.bbox_left, 0), Goomba);
+		}
+		else
+		{
+			// enemy.x += bbox_left - enemy.bbox_right;
+			enemy.Push(new Vector2(bbox_left - enemy.bbox_right, 0), Goomba);
+		}
+	}
+}

@@ -1,8 +1,8 @@
 event_inherited()
 
-acceleration = 2000;
-deceleration = 2000;
-maxSpeed = 80;
+acceleration = 2000; // pixels / s^2
+deceleration = 2000; // pixels / s^2
+maxSpeed = 80; // pixels / s
 jumpStrength = 125;
 fallSpeed = 300;
 dodgeLength = 0.2;
@@ -14,8 +14,12 @@ invincible = false;
 hitPoints = 10;
 maxHitPoints = 10;
 input_presses = 0;
+damageInvTime = 0.5; // seconds
+damageInv = false; // Invuln from taking damage
 key_pressed_left = keyboard_check_pressed(ord("A"));
 key_pressed_right = keyboard_check_pressed(ord("D"));
+
+// collisionLayer = [ layer_tilemap_get_id("Floor"), SwordHurtbox ];
 
 TryJump = function()
 {
@@ -87,64 +91,36 @@ Dodge = function()
 }
 
 
-TakeDamage = function(damage)
+TakeDamage = function(damage, hitNormal = new Vector2())
 {
-	if (!invincible)
+	if (invincible || damageInv)
 	{
-		if (damage <= 0)
-		{
-			return;
-		}
-	
-		if (hitPoints <= 0)
-		{
-			return;
-		}
-	
-		hitPoints -= damage;
-		show_debug_message("{0} took damage! {1} health remaining", id, hitPoints);
+		return;
 	}
-
+	
+	if (damage <= 0)
+	{
+		return;
+	}
+	
+	if (hitPoints <= 0)
+	{
+		return;
+	}
+	
+	hitPoints -= damage;
+	
+	
+	if (hitNormal)
+	{
+	}
 	
 	if (hitPoints <= 0)
 	{
 		hitPoints = 0;
 		// Die();
 	}
-}
-
-SweepEnemies = function()
-{
-	var enemies = ds_list_create();
-	
-	var delta = velocity.TimesReal(DeltaTimeSeconds());
-	delta.y *= -1; // velocity y is inverted
-	
-	if (delta.y > 0)
-	{
-		if (delta.x > 0)
-		{
-			// Check our box, extended right and down
-			collision_rectangle_list(bbox_left, bbox_top, bbox_right + delta.x, bbox_bottom + delta.y, Goomba, false, true, enemies, false);
-		}
-		else
-		{
-			// Box, extended left and down
-			collision_rectangle_list(bbox_left + delta.x, bbox_top, bbox_right, bbox_bottom + delta.y, Goomba, false, true, enemies, false);
-		}
-	}
-	else
-	{
-		if (delta.x > 0)
-		{
-			// Box, extended right and up
-			collision_rectangle_list(bbox_left, bbox_top + delta.y, bbox_right + delta.x, bbox_bottom, Goomba, false, true, enemies, false);
-		}
-		else
-		{
-			// Box, extended left and up
-			collision_rectangle_list(bbox_left + delta.x, bbox_top + delta.y, bbox_right, bbox_bottom, Goomba, false, true, enemies, false);
-		}
-	}
-	return enemies;
+	damageInv = true;
+	global.gameState.timerManager.Add(damageInvTime, function(){ damageInv = false; }, id);
+	show_debug_message("{0} took damage! {1} health remaining", id, hitPoints);
 }
