@@ -65,8 +65,14 @@ Sweep = function(delta, target)
 
 /// @param {Struct.Vector2} delta
 /// @param {Id.TileMapElement | Asset.GMObject | Id.Instance | Constant.All | Constant.Array | Array} target
-Push = function(delta, target)
+Push = function(delta, target, stackDepth = 0)
 {
+	// Prevent infinite recursion
+	if (stackDepth > 5)
+	{
+		return;
+	}
+	
 	x += delta.x;
 	y += delta.y;
 	var enemiesHit = Sweep(delta, target)
@@ -78,12 +84,12 @@ Push = function(delta, target)
 		if (delta.x > 0)
 		{
 			// enemy.x += bbox_right - enemy.bbox_left;
-			enemy.Push(new Vector2(bbox_right - enemy.bbox_left, 0), Goomba);
+			enemy.Push(new Vector2(bbox_right - enemy.bbox_left, 0), Goomba, stackDepth + 1);
 		}
 		else
 		{
 			// enemy.x += bbox_left - enemy.bbox_right;
-			enemy.Push(new Vector2(bbox_left - enemy.bbox_right, 0), Goomba);
+			enemy.Push(new Vector2(bbox_left - enemy.bbox_right, 0), Goomba, stackDepth + 1);
 		}
 	}
 }
