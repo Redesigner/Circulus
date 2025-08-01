@@ -1,3 +1,8 @@
+if (global.paused)
+{
+	return;
+}
+
 drawing = false;
 resetRequested = true;
 

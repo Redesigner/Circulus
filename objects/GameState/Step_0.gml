@@ -3,4 +3,6 @@ if (global.paused)
 	return;
 }
 
-timerManager.Step(DeltaTimeSeconds());
+var delta = DeltaTimeSeconds();
+timerManager.Step(delta);
+time += delta;

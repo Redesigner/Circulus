@@ -21,5 +21,5 @@ Tap = function()
 	Stun(4.0);
 }
 
-followTargetPosition = GetPositionVector(id);
-acceleration = 0;
+localTime = 0;
+targetPosition = GetPositionVector(id);
