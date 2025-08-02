@@ -6,17 +6,20 @@ global.drawDebug = false;
 timerManager = new TimerManager();
 time = 0;
 playerCanUnpause = false;
-
+startSequence = 0;
 
 RoomStart = function()
 {
 	global.paused = true;
 	playerCanUnpause = false;
 	
-	call_later(3, time_source_units_seconds, function()
+	startSequence = layer_sequence_create(layer, 160, 90, Sq_Start);
+	
+	call_later(5, time_source_units_seconds, function()
 		{
 			global.paused = false;
 			playerCanUnpause = true;
+			layer_sequence_destroy(startSequence);
 		});
 }
 

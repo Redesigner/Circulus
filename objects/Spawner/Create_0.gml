@@ -36,3 +36,24 @@ AddSpawnerEntry = function(wave, type, spawnPointIndex, delay, _direction = 0)
 	
 	array_push(waves[wave], new SpawnerEntry(type, spawnPointIndex, delay, _direction));
 }
+
+SkipWave = function()
+{
+	var enemies = layer_get_all_elements("Enemies");
+	array_foreach(enemies, function(enemy, index)
+		{
+			var enemyInstance = layer_instance_get_instance(enemy);
+			if (object_is_ancestor(enemyInstance.object_index, EnemyBase))
+			{
+				enemyInstance.TakeDamage(100);
+			}
+		});
+		
+	if (currentWave < totalWaves - 1)
+	{
+		++currentWave;
+		currentEnemyKillCount = 0;
+		triggered = false;
+		timer = 0;
+	}
+}
