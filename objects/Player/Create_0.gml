@@ -150,7 +150,9 @@ Die = function()
 {
 	dead = true;
 	playingSequence = layer_sequence_create(layer, x, y, Sq_PlayerDie);
+	instance_destroy(playerDrawingSprite);
 	visible = false;
+	global.canDraw = false;
 	global.gameState.timerManager.Add(1.9, function()
 		{
 			layer_sequence_destroy(playingSequence);

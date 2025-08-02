@@ -50,11 +50,15 @@ SkipWave = function()
 			}
 		});
 		
-	if (currentWave < totalWaves - 1)
+	if (currentWave < totalWaves)
 	{
 		++currentWave;
 		currentEnemyKillCount = 0;
 		triggered = false;
 		timer = 0;
+	}
+	else
+	{
+		global.gameState.Victory();
 	}
 }

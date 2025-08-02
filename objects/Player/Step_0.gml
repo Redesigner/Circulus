@@ -121,5 +121,8 @@ if (sweepingEnemies)
 	}
 }
 
-playerDrawingSprite.x = x;
-playerDrawingSprite.y = y;
+if (!dead)
+{
+	playerDrawingSprite.x = x;
+	playerDrawingSprite.y = y;
+}

@@ -1,3 +1,8 @@
+if (wasPushed)
+{
+	return;
+}
+
 if (other.x < x)
 {
 	walkDirection = 1;

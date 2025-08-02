@@ -43,7 +43,7 @@
     ],
     "top":0,
   },
-  "origin":7,
+  "origin":9,
   "parent":{
     "name":"Sprites",
     "path":"folders/Characters/Enemies/ForegroundEnemies/Goomba/Dueler/Sprites.yy",
@@ -100,7 +100,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":64,
+    "xorigin":63,
     "yorigin":128,
   },
   "swatchColours":null,
