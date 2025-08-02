@@ -1,6 +1,6 @@
 event_inherited();
 
-if (grounded)
+if (grounded && !playingOneShot)
 {
 	if (abs(velocity.x) < 1)
 	{

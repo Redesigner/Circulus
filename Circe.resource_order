@@ -89,7 +89,7 @@
     {"name":"Sp_Countdown","order":2,"path":"sprites/Sp_Countdown/Sp_Countdown.yy",},
     {"name":"Sp_DulerDie","order":2,"path":"sprites/Sp_DulerDie/Sp_DulerDie.yy",},
     {"name":"Sp_DulerFall","order":1,"path":"sprites/Sp_DulerFall/Sp_DulerFall.yy",},
-    {"name":"Sp_Foreground","order":2,"path":"sprites/Sp_Foreground/Sp_Foreground.yy",},
+    {"name":"Sp_Foreground","order":5,"path":"sprites/Sp_Foreground/Sp_Foreground.yy",},
     {"name":"Sp_Goomba_Dead","order":1,"path":"sprites/Sp_Goomba_Dead/Sp_Goomba_Dead.yy",},
     {"name":"Sp_Greatswordsmin_1Fall","order":1,"path":"sprites/Sp_Greatswordsmin_1Fall/Sp_Greatswordsmin_1Fall.yy",},
     {"name":"Sp_GreatswordsminDie","order":2,"path":"sprites/Sp_GreatswordsminDie/Sp_GreatswordsminDie.yy",},
