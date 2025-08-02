@@ -4,18 +4,21 @@ grounded = false;
 maxHitPoints = 3;
 playingOneShot = false;
 oneShotCallback = function(){};
+cancelOneShot = false;
 
 animationSpeed = 1;
 
-/// @params {Asset.GMSprite} animation
-/// @params {Function} callback
-PlayAnimationOnce = function(animation, callback = function(){})
+/// @param {Asset.GMSprite} animation
+/// @param {Bool} cancel Should the animation stop overriding others when it's over?
+/// @param {Function} callback
+PlayAnimationOnce = function(animation, cancel, callback = function(){})
 {
 	playingOneShot = true;
 	sprite_index = animation;
 	image_index = 0;
 	animationSpeed = 1;
 	oneShotCallback = callback;
+	cancelOneShot = cancel;
 }
 
 CancelOneShot = function()

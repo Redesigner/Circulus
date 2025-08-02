@@ -44,7 +44,7 @@ Jump = function()
 	velocity.y = jumpStrength;
 	Invincibility(0.2);
 	grounded = false;
-	PlayAnimationOnce(Sp_PlayerJump);
+	PlayAnimationOnce(Sp_PlayerJump, false);
 }
 
 DoubleJump = function()
@@ -57,7 +57,7 @@ DoubleJump = function()
 	Invincibility(0.2);
 	velocity.y = jumpStrength;
 	canDoubleJump = false;
-	PlayAnimationOnce(Sp_PlayerJump);
+	PlayAnimationOnce(Sp_PlayerJump, false);
 }
 
 LandOnGround = function()
@@ -114,7 +114,7 @@ TakeDamage = function(damage, hitNormal = new Vector2())
 	}
 	
 	hitPoints -= damage;
-	PlayAnimationOnce(Sp_PlayerDamage);
+	PlayAnimationOnce(Sp_PlayerDamage, true);
 	
 	if (!hitNormal.IsZero())
 	{
