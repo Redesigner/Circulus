@@ -7,6 +7,11 @@ if (global.paused)
 //Increase timer by the the number of seconds passed since out last step
 timer+= DeltaTimeSeconds();
 
+if (currentWave == totalWaves)
+{
+	instance_destroy();
+}
+
 // Iterate through each entry in our waves list
 array_foreach(waves[currentWave], function(entry, index)
 	{
