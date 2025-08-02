@@ -38,6 +38,11 @@ function TimerHandle(timer) constructor
 		}
 	}
 	
+	static Expired = function()
+	{
+		return weak_ref_alive(timerRef);
+	}
+	
 	static Pause = function()
 	{
 		if (weak_ref_alive(timerRef))

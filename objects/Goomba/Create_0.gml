@@ -9,6 +9,8 @@ fallSpeed = 100;
 walkSpeed = 40;
 walkDirection = -1;
 jumpPower = 70;
+wasPushed = false;
+pushTimer = 0;
 
 Stomp = function()
 {
@@ -19,4 +21,21 @@ Jump = function()
 {
 	grounded = false;
 	velocity.y = jumpPower;
+}
+
+BasePush = method(id, Push);
+/// @param {Struct.Vector2} delta
+/// @param {Id.TileMapElement | Asset.GMObject | Id.Instance | Constant.All | Constant.Array | Array} target
+Push = function(delta, target, stackDepth = 0)
+{
+	BasePush(delta, target, stackDepth);
+	
+	if (wasPushed)
+	{
+		pushTimer.Reset();
+	}
+	else
+	{
+		pushTimer = global.gameState.timerManager.Add(0.2, function() { wasPushed = false; }, id);
+	}
 }
