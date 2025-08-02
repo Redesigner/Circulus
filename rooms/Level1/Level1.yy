@@ -14,7 +14,6 @@
     {"name":"inst_69A0CDB3_1","path":"rooms/Level1/Level1.yy",},
     {"name":"inst_71480A6F","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_167CB1EE","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_7A6E37B0","path":"rooms/Level1/Level1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -33,7 +32,6 @@
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":96.0,},
         {"$GMRInstance":"v2","%Name":"inst_4C6A6C86_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4C6A6C86_1","objectId":{"name":"TurnAroundHitbox","path":"objects/TurnAroundHitbox/TurnAroundHitbox.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":16.0,"y":144.0,},
         {"$GMRInstance":"v2","%Name":"inst_69A0CDB3_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_69A0CDB3_1","objectId":{"name":"TurnAroundHitbox","path":"objects/TurnAroundHitbox/TurnAroundHitbox.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":416.0,"y":144.0,},
-        {"$GMRInstance":"v2","%Name":"inst_7A6E37B0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7A6E37B0","objectId":{"name":"Spawner","path":"objects/Spawner/Spawner.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":5.0,"scaleY":2.75,"x":0.0,"y":0.0,},
       ],"layers":[],"name":"Enemies","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Floor","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Floor","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":12,"SerialiseWidth":40,"TileCompressedData":[
           -2,0,-38,-2147483648,-2,0,-38,-2147483648,1,0,-39,-2147483648,1,0,-39,-2147483648,1,0,-39,-2147483648,

@@ -30,6 +30,6 @@ function Delegate() constructor
 	/// @param {Struct|Id.Instance} _caller
 	static Register = function(_caller, _method)
 	{
-		ArrayPushBack(boundCallers, new DelegateMember(_caller, _method));
+		array_push(boundCallers, new DelegateMember(_caller, _method));
 	}
 }

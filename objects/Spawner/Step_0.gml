@@ -1,35 +1,46 @@
-/// @desc Spawn Things
-
-if (triggered)
+// If the game is paused, none of the step code will execute, because of this return statement
+if (global.paused)
 {
-	//Check the list for enemies that are ready to spawn and if they are the right wave/time spawn them!
-	for (var i = 0; i < ds_list_size(waves); i++)
+	return;
+}
+
+//Increase timer by the the number of seconds passed since out last step
+timer+= DeltaTimeSeconds();
+
+// Iterate through each entry in our waves list
+array_foreach(waves[currentWave], function(entry, index)
 	{
-		var next = ds_list_find_value(waves, i)
-		if (next[_WAVE] == current_wave) && (next[_DELAY] == timer)
+		if (entry.delay < timer && !entry.spawned)
 		{
-			var spawnpoint = next[_SPAWN];
-			instance_create_layer(spawn[spawnpoint, 0], spawn[spawnpoint, 1], "Enemies", next[_TYPE]);
+			// Only 'Trigger' our wave once we've spawned the first enemy
+			triggered = true;
+			
+			// Read our spawnPoint from the list
+			var spawnPoint = spawnPoints[entry.spawnPointIndex];
+			var newlySpawnedEnemy = instance_create_layer(spawnPoint.x, spawnPoint.y, "Enemies", entry.type);
+			entry.spawned = true;
+			
+			// Register a function to our delegate! When our enemy dies, it will call this function below,
+			// and increase our currentEnemyKillCount by 1
+			newlySpawnedEnemy.onDeath.Register(id, function() { ++currentEnemyKillCount; });
 		}
+	});
+	
+//Next wave or end of spawner when all enemies have died
+if (currentEnemyKillCount == array_length(waves[currentWave]) && triggered)
+{
+	if (currentWave == totalWaves)
+	{
+		instance_destroy();
+		//
+		//Victory Screen and Level Transition
+		//
 	}
-	
-	//Increase timer
-	timer++;
-	
-	//Next wave or end of spawner when all enemies have died
-	if (remaining[current_wave] <= 0)
+	else
 	{
-		if (current_wave == total_waves)
-		{
-			instance_destroy();
-			//
-			//Victory Screen and Level Transition
-			//
-		}
-		else
-		{
-			current_wave++;
-			timer = 0;
-		}
+		++currentWave;
+		currentEnemyKillCount = 0;
+		triggered = false;
+		timer = 0;
 	}
 }

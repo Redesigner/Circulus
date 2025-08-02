@@ -94,6 +94,7 @@
     {"id":{"name":"InputAxis","path":"scripts/InputAxis/InputAxis.yy",},},
     {"id":{"name":"Lerp","path":"scripts/Lerp/Lerp.yy",},},
     {"id":{"name":"Raycast","path":"scripts/Raycast/Raycast.yy",},},
+    {"id":{"name":"SpawnerEntry","path":"scripts/SpawnerEntry/SpawnerEntry.yy",},},
     {"id":{"name":"Time","path":"scripts/Time/Time.yy",},},
     {"id":{"name":"Timer","path":"scripts/Timer/Timer.yy",},},
     {"id":{"name":"Vector2","path":"scripts/Vector2/Vector2.yy",},},
