@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"BackgroundFollowSprite",
+  "%Name":"BackgroundFollowBuildings",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"BackgroundFollowSprite",
+  "name":"BackgroundFollowBuildings",
   "overriddenProperties":[],
   "parent":{
     "name":"Environment",
@@ -26,14 +26,14 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"factor","filters":[],"listItems":[],"multiselect":false,"name":"factor","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"factor","filters":[],"listItems":[],"multiselect":false,"name":"factor","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.5","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sp_SkyBackground",
-    "path":"sprites/Sp_SkyBackground/Sp_SkyBackground.yy",
+    "name":"Sp_Buildings",
+    "path":"sprites/Sp_Buildings/Sp_Buildings.yy",
   },
   "spriteMaskId":null,
   "visible":true,

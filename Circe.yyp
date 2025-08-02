@@ -80,6 +80,7 @@
     {"id":{"name":"ArmoredEnemy","path":"objects/ArmoredEnemy/ArmoredEnemy.yy",},},
     {"id":{"name":"ArmoredEyer","path":"objects/ArmoredEyer/ArmoredEyer.yy",},},
     {"id":{"name":"BackgroundEnemy","path":"objects/BackgroundEnemy/BackgroundEnemy.yy",},},
+    {"id":{"name":"BackgroundFollowBuildings","path":"objects/BackgroundFollowBuildings/BackgroundFollowBuildings.yy",},},
     {"id":{"name":"BackgroundFollowSprite","path":"objects/BackgroundFollowSprite/BackgroundFollowSprite.yy",},},
     {"id":{"name":"Bar","path":"objects/Bar/Bar.yy",},},
     {"id":{"name":"Bombito","path":"objects/Bombito/Bombito.yy",},},

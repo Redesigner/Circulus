@@ -1,12 +1,12 @@
 event_inherited()
 
-acceleration = 2000; // pixels / s^2
-deceleration = 2000; // pixels / s^2
-maxSpeed = 80; // pixels / s
-jumpStrength = 125;
-fallSpeed = 300;
+acceleration = 2000 * 1.5; // pixels / s^2
+deceleration = 2000 * 1.5; // pixels / s^2
+maxSpeed = 80 * 1.5; // pixels / s
+jumpStrength = 125 * 1.5;
+fallSpeed = 300 * 1.5;
 dodgeLength = 0.2;
-dodgeSpeed = 175;
+dodgeSpeed = 175 * 1.5;
 isDodging = false;
 canDoubleJump = true;
 airControlFactor = 0.1
@@ -44,6 +44,7 @@ Jump = function()
 	velocity.y = jumpStrength;
 	Invincibility(0.2);
 	grounded = false;
+	PlayAnimationOnce(Sp_PlayerJump);
 }
 
 DoubleJump = function()
@@ -56,11 +57,16 @@ DoubleJump = function()
 	Invincibility(0.2);
 	velocity.y = jumpStrength;
 	canDoubleJump = false;
+	PlayAnimationOnce(Sp_PlayerJump);
 }
 
 LandOnGround = function()
 {
 	canDoubleJump = true;
+	if (sprite_index == Sp_PlayerJump)
+	{
+		CancelOneShot();
+	}
 }
 
 Invincibility = function(seconds)
@@ -108,7 +114,7 @@ TakeDamage = function(damage, hitNormal = new Vector2())
 	}
 	
 	hitPoints -= damage;
-	
+	PlayAnimationOnce(Sp_PlayerDamage);
 	
 	if (!hitNormal.IsZero())
 	{
