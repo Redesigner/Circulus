@@ -65,6 +65,7 @@
     {"name":"SwordHurtbox","order":2,"path":"objects/SwordHurtbox/SwordHurtbox.yy",},
     {"name":"Swordsmin","order":1,"path":"objects/Swordsmin/Swordsmin.yy",},
     {"name":"Level1","order":1,"path":"rooms/Level1/Level1.yy",},
+    {"name":"TestLevel","order":2,"path":"rooms/TestLevel/TestLevel.yy",},
     {"name":"RoomUI","order":6,"path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"ArrayHelpers","order":4,"path":"scripts/ArrayHelpers/ArrayHelpers.yy",},
     {"name":"Delegate","order":1,"path":"scripts/Delegate/Delegate.yy",},

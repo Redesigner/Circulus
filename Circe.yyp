@@ -113,6 +113,7 @@
     {"id":{"name":"TurnAroundHitbox","path":"objects/TurnAroundHitbox/TurnAroundHitbox.yy",},},
     {"id":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"TestLevel","path":"rooms/TestLevel/TestLevel.yy",},},
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
     {"id":{"name":"ArrayHelpers","path":"scripts/ArrayHelpers/ArrayHelpers.yy",},},
     {"id":{"name":"Delegate","path":"scripts/Delegate/Delegate.yy",},},
@@ -161,6 +162,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"TestLevel","path":"rooms/TestLevel/TestLevel.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
   ],
