@@ -1,6 +1,6 @@
 event_inherited();
 
-hitPoints = 3;
+hitPoints = 1;
 dead = false;
 target = instance_find(Player, 0);
 
