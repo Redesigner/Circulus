@@ -2,8 +2,31 @@ velocity = new Vector2();
 collisionLayer = layer_tilemap_get_id("Floor");
 grounded = false;
 maxHitPoints = 3;
+playingOneShot = false;
+oneShotCallback = function(){};
 
-LandOnGround = function() {};
+animationSpeed = 1;
+
+/// @params {Asset.GMSprite} animation
+/// @params {Function} callback
+PlayAnimationOnce = function(animation, callback = function(){})
+{
+	playingOneShot = true;
+	sprite_index = animation;
+	image_index = 0;
+	animationSpeed = 1;
+	oneShotCallback = callback;
+}
+
+CancelOneShot = function()
+{
+	playingOneShot = false;
+	animationSpeed = 1;
+}
+
+LandOnGround = function()
+{
+};
 
 /// @param {Struct.Vector2} delta How much to move by
 Move = function(delta)

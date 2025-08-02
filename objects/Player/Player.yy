@@ -6,6 +6,7 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":32,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":72,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"Player",
@@ -36,9 +37,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sp_Test",
-    "path":"sprites/Sp_Test/Sp_Test.yy",
+    "name":"Sp_PlayerIdle",
+    "path":"sprites/Sp_PlayerIdle/Sp_PlayerIdle.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"Sp_PlayerIdle",
+    "path":"sprites/Sp_PlayerIdle/Sp_PlayerIdle.yy",
+  },
   "visible":true,
 }
