@@ -18,6 +18,7 @@ damageInvTime = 0.5; // seconds
 damageInv = false; // Invuln from taking damage
 key_pressed_left = keyboard_check_pressed(ord("A"));
 key_pressed_right = keyboard_check_pressed(ord("D"));
+dead = false;
 
 // collisionLayer = [ layer_tilemap_get_id("Floor"), SwordHurtbox ];
 
@@ -111,16 +112,34 @@ TakeDamage = function(damage, hitNormal = new Vector2())
 	hitPoints -= damage;
 	
 	
-	if (hitNormal)
+	if (!hitNormal.IsZero())
 	{
+		hitNormal.MultiplyReal(500);
+		hitNormal.y = 50;
+		velocity.Add(hitNormal);
 	}
 	
 	if (hitPoints <= 0)
 	{
 		hitPoints = 0;
-		// Die();
+		Die();
 	}
 	damageInv = true;
 	global.gameState.timerManager.Add(damageInvTime, function(){ damageInv = false; }, id);
 	show_debug_message("{0} took damage! {1} health remaining", id, hitPoints);
+}
+
+Die = function()
+{
+	dead = true;
+}
+
+Heal = function(value)
+{
+	if (dead)
+	{
+		return;
+	}
+	
+	hitPoints = min(hitPoints + value, maxHitPoints);
 }
