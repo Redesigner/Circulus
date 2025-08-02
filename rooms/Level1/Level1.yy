@@ -12,8 +12,6 @@
     {"name":"inst_76CC15A0_1","path":"rooms/Level1/Level1.yy",},
     {"name":"inst_4C6A6C86_1","path":"rooms/Level1/Level1.yy",},
     {"name":"inst_69A0CDB3_1","path":"rooms/Level1/Level1.yy",},
-    {"name":"inst_71480A6F","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_167CB1EE","path":"roomui/RoomUI/RoomUI.yy",},
   ],
   "isDnd":false,
   "layers":[
