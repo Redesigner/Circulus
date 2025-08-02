@@ -3,7 +3,7 @@
 triggered = false;
 timer = 0;
 currentWave = 0;
-totalWaves = 2;
+totalWaves = 0;
 currentEnemyKillCount = 0;
 
 waves = array_create(0);
@@ -31,6 +31,7 @@ AddSpawnerEntry = function(wave, type, spawnPointIndex, delay, _direction = 0)
 		for (var i = arrayLength; i <= wave; ++i)
 		{
 			array_push(waves, array_create(0));
+			totalWaves = wave;
 		}
 	}
 	
