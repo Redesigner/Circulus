@@ -15,6 +15,7 @@ spawnPoints = array_create(0);
 AddSpawnPoint = function(_x, _y)
 {
 	array_push(spawnPoints, new Vector2(_x, _y));
+	return array_length(spawnPoints) - 1;
 }
 
 /// @param {Real} wave
