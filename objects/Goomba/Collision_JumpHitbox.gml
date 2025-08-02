@@ -1,0 +1,4 @@
+if (grounded)
+{
+	Jump();
+}

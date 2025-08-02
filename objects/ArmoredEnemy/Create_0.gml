@@ -21,5 +21,6 @@ Tap = function()
 	Stun(4.0);
 }
 
-localTime = 0;
-targetPosition = GetPositionVector(id);
+movementStrength = 20;
+movementPeriod = 1;
+movementType = MovementType.Circle;
