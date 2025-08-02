@@ -20,6 +20,7 @@ key_pressed_left = keyboard_check_pressed(ord("A"));
 key_pressed_right = keyboard_check_pressed(ord("D"));
 dead = false;
 
+playerDrawingSprite = instance_create_depth(x, y, depth + 1, PlayerDrawing);
 // collisionLayer = [ layer_tilemap_get_id("Floor"), SwordHurtbox ];
 
 TryJump = function()
@@ -89,9 +90,11 @@ Dodge = function()
 	isDodging = true;
 	velocity.x = dodgeSpeed * inputAxis;
 	Invincibility(dodgeLength);
+	PlayAnimationOnce(Sp_PlayerSlide2, false);
 	global.gameState.timerManager.Add(dodgeLength, function()
 	{
 		isDodging = false;
+		CancelOneShot();
 	}, id);
 }
 
@@ -128,6 +131,15 @@ TakeDamage = function(damage, hitNormal = new Vector2())
 		hitPoints = 0;
 		Die();
 	}
+	
+	global.gameState.playerCanUnpause = false;
+	global.paused = true;
+	call_later(0.2, time_source_units_seconds, function()
+		{
+			global.gameState.playerCanUnpause = true;
+			global.paused = false;
+		});
+	
 	damageInv = true;
 	global.gameState.timerManager.Add(damageInvTime, function(){ damageInv = false; }, id);
 	show_debug_message("{0} took damage! {1} health remaining", id, hitPoints);
@@ -136,6 +148,7 @@ TakeDamage = function(damage, hitNormal = new Vector2())
 Die = function()
 {
 	dead = true;
+	PlayAnimationOnce(Sp_PlayerDie, false);
 }
 
 Heal = function(value)

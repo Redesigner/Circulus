@@ -1,6 +1,6 @@
 var distance = 0;
 var currentPixelColor = make_color_rgb(0, 0, 0);
-if (drawing)
+if (global.drawing)
 {
 	var mousePosition = new Vector2(mouse_x, mouse_y);
 	var mousePositionDrawingGrid = mousePosition.DividedByReal(scaleFactor);
@@ -29,14 +29,14 @@ if (drawing)
 	distance = currentDrawValue - mousedOverValue;
 	if (mousedOverValue > 0 && distance > 5)
 	{
-		drawing = false;
+		global.drawing = false;
 		resetRequested = true;
 		CloseLoop();
 	}
 	
 	if (currentDrawValue > inkMax)
 	{
-		drawing = false;
+		global.drawing = false;
 		resetRequested = true;
 		Slash();
 	}
