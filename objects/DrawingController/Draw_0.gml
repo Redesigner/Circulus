@@ -34,7 +34,7 @@ if (drawing)
 		CloseLoop();
 	}
 	
-	if (currentDrawValue > 20)
+	if (currentDrawValue > inkMax)
 	{
 		drawing = false;
 		resetRequested = true;

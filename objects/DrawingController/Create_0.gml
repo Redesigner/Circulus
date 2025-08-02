@@ -3,6 +3,8 @@ resetRequested = false;
 currentDrawValue = 0;
 scaleFactor = 8;
 
+inkMax = 30;
+inkActive = false;
 previousMousePosition = new Vector2();
 canvas = surface_create(room_width, room_height, surface_rgba8unorm);
 collisionChecker = new DrawingGrid(ceil(room_width / scaleFactor), ceil(room_height / scaleFactor));
@@ -38,6 +40,7 @@ CloseLoop = function()
 			}
 		});
 	collisionChecker.Clear();
+	inkActive = false;
 }
 
 Slash = function()
@@ -63,6 +66,7 @@ Slash = function()
 		}
 	);
 	collisionChecker.Clear();
+	inkActive = false;
 }
 
 Tap = function()
