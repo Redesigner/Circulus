@@ -3,7 +3,11 @@ event_inherited();
 hitPoints = 3;
 dead = false;
 target = instance_find(Player, 0);
+
 onDeath = new Delegate();
+onStunned = new Delegate();
+onUnstunned = new Delegate();
+canCollide = false;
 
 fireTimerCurrent = 0;
 fireTimer = random_range(fireRateMin, fireRateMax);
@@ -40,9 +44,11 @@ Stun = function(duration)
 		return;
 	}
 	
+	onStunned.Invoke();
 	isStunned = true;
 	stunTimer = global.gameState.timerManager.Add(duration, function()
 		{
+			onUnstunned.Invoke();
 			isStunned = false;
 		}, id);
 }
@@ -73,7 +79,7 @@ Die = function()
 	}
 	call_later(0.5, time_source_units_seconds,  destroySelf);
 	
-	instance_create_layer(x, (bbox_top + bbox_bottom) / 2, layer, HealthPickup);
+	instance_create_layer(x, (bbox_top + bbox_bottom) / 2, "Enemies", HealthPickup);
 	onDeath.Invoke();
 }
 

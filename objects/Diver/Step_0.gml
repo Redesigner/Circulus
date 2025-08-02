@@ -3,10 +3,17 @@ if (global.paused || isStunned)
 	return;
 }
 
-localTime += DeltaTimeSeconds();
-z = 0.5 + sin(localTime) / 2;
+if (divingTimer)
+{
+	z = sin(divingTimer.ElapsedTimePercent() * pi);
+	var scale = 1 + z;
+	image_xscale = scale;
+	image_yscale = scale;
+	canCollide = z > 0.8;
+	depth = startingDepth - z;
+}
 
-x = lerp(startingPosition.x, target.x, z);
-y = lerp(startingPosition.y, target.y, z);
+x = lerp(startingPosition.x, targetPosition.x, z);
+y = lerp(startingPosition.y, targetPosition.y, z);
 
 event_inherited();

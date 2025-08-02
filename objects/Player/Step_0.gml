@@ -80,12 +80,12 @@ var delta = velocity.TimesReal(DeltaTimeSeconds());
 delta.y = -delta.y;
 if (velocity.y < 0 && !grounded)
 {
-	enemiesHit = Sweep(delta, Goomba);
+	enemiesHit = Sweep(delta, [ Goomba, Diver ]);
 	var numEnemiesHit = ds_list_size(enemiesHit);
 	for (var i = 0; i < numEnemiesHit; ++i)
 	{
 		var enemy = ds_list_find_value(enemiesHit, i);
-		if (enemy.bbox_top + 2 >= bbox_bottom) // give 2 units of "grace"
+		if (enemy.bbox_top + 2 >= bbox_bottom && enemy.canCollide) // give 2 units of "grace"
 		{
 			enemy.Stomp();
 			velocity.y = jumpStrength;
