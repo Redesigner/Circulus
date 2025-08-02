@@ -1,1 +1,6 @@
-sprite_index = dead ? Sp_Goomba_Dead : Sp_Greatswordsmin;
+event_inherited();
+
+if (!playingOneShot)
+{
+	sprite_index = grounded ? Sp_Greatswordsmin : Sp_GreatswordsminFall;
+}

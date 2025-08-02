@@ -38,6 +38,9 @@
     "name":"Sp_SwordsminWalk",
     "path":"sprites/Sp_SwordsminWalk/Sp_SwordsminWalk.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"Sp_SwordsminWalk",
+    "path":"sprites/Sp_SwordsminWalk/Sp_SwordsminWalk.yy",
+  },
   "visible":true,
 }

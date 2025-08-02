@@ -36,6 +36,7 @@ Push = function(delta, target, stackDepth = 0)
 	}
 	else
 	{
-		pushTimer = global.gameState.timerManager.Add(0.2, function() { wasPushed = false; }, id);
+		wasPushed = true;
+		pushTimer = global.gameState.timerManager.Add(0.5, function() { wasPushed = false; }, id);
 	}
 }

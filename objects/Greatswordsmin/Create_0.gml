@@ -8,6 +8,7 @@ walkDirection = -1;
 DieBase = method(id, Die);
 Die = function()
 {
+	PlayAnimationOnce(Sp_GreatswordsminDie, false);
 	DieBase();
 	instance_destroy(sword);
 }

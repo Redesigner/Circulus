@@ -39,6 +39,9 @@
     "name":"Sp_Greatswordsmin",
     "path":"sprites/Sp_Greatswordsmin/Sp_Greatswordsmin.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"Sp_Greatswordsmin",
+    "path":"sprites/Sp_Greatswordsmin/Sp_Greatswordsmin.yy",
+  },
   "visible":true,
 }

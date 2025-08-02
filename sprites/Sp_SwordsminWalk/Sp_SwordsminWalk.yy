@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
   "%Name":"Sp_SwordsminWalk",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":127,
-  "bbox_left":23,
-  "bbox_right":77,
+  "bbox_left":50,
+  "bbox_right":81,
   "bbox_top":95,
   "collisionKind":1,
   "collisionTolerance":0,
