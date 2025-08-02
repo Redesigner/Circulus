@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"TurnAroundHitbox",
+  "%Name":"JumpHitbox",
   "eventList":[],
   "managed":true,
-  "name":"TurnAroundHitbox",
+  "name":"JumpHitbox",
   "overriddenProperties":[],
   "parent":{
     "name":"Indicators",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sp_Rect",
-    "path":"sprites/Sp_Rect/Sp_Rect.yy",
+    "name":"Sp_Rect16",
+    "path":"sprites/Sp_Rect16/Sp_Rect16.yy",
   },
   "spriteMaskId":null,
   "visible":false,

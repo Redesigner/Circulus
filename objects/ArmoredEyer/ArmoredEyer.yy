@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"ArmoredEnemy",
+  "%Name":"ArmoredEyer",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":72,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"ArmoredEnemy",
+  "name":"ArmoredEyer",
   "overriddenProperties":[],
   "parent":{
-    "name":"ArmoredEnemies",
-    "path":"folders/Characters/Enemies/BackgroundEnemies/ArmoredEnemies.yy",
+    "name":"ArmoredEyer",
+    "path":"folders/Characters/Enemies/BackgroundEnemies/ArmoredEyer.yy",
   },
   "parentObjectId":{
     "name":"BackgroundEnemy",
@@ -34,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sp_ArmoredEnemyPh",
-    "path":"sprites/Sp_ArmoredEnemyPh/Sp_ArmoredEnemyPh.yy",
+    "name":"Sp_ArmoredEyer",
+    "path":"sprites/Sp_ArmoredEyer/Sp_ArmoredEyer.yy",
   },
   "spriteMaskId":null,
   "visible":true,

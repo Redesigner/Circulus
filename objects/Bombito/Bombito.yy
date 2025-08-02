@@ -1,20 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"ArmoredEnemy",
+  "%Name":"Bombito",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":72,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"ArmoredEnemy",
+  "name":"Bombito",
   "overriddenProperties":[],
   "parent":{
-    "name":"ArmoredEnemies",
-    "path":"folders/Characters/Enemies/BackgroundEnemies/ArmoredEnemies.yy",
+    "name":"Bombito",
+    "path":"folders/Characters/Enemies/ForegroundEnemies/Goomba/Bombito.yy",
   },
   "parentObjectId":{
-    "name":"BackgroundEnemy",
-    "path":"objects/BackgroundEnemy/BackgroundEnemy.yy",
+    "name":"Goomba",
+    "path":"objects/Goomba/Goomba.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sp_ArmoredEnemyPh",
-    "path":"sprites/Sp_ArmoredEnemyPh/Sp_ArmoredEnemyPh.yy",
+    "name":"Sp_Bombito",
+    "path":"sprites/Sp_Bombito/Sp_Bombito.yy",
   },
   "spriteMaskId":null,
   "visible":true,
