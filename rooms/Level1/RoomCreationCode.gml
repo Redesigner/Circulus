@@ -18,10 +18,8 @@ spawner.AddSpawnerEntry(1, TestEnemy, 1, 6);
 spawner.AddSpawnerEntry(2, ArmoredEnemy, 0, 0);
 
 //Wave 4
-spawner.AddSpawnerEntry(3, TestEnemy, 1, 1);
-spawner.AddSpawnerEntry(3, TestEnemy, 0, 1);
-spawner.AddSpawnerEntry(3, TestEnemy, 1, 3);
-spawner.AddSpawnerEntry(3, TestEnemy, 0, 3);
-spawner.AddSpawnerEntry(3, ArmoredEnemy, 1, 4);
-spawner.AddSpawnerEntry(3, ArmoredEnemy, 2, 4);
-spawner.AddSpawnerEntry(3, Swordsmin, 4, 4);
+spawner.AddSpawnerEntry(3, TestEnemy, 0, 2);
+spawner.AddSpawnerEntry(3, ArmoredEnemy, 1, 2);
+spawner.AddSpawnerEntry(3, TestEnemy, 2, 2);
+
+spawner.AddSpawnerEntry(3, Swordsmin, 4, 10);
