@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sp_Test",
-    "path":"sprites/Sp_Test/Sp_Test.yy",
+    "name":"Sp_PlayerIdle",
+    "path":"sprites/Sp_PlayerIdle/Sp_PlayerIdle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

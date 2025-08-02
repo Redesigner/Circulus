@@ -66,11 +66,9 @@ LandOnGround = function()
 Invincibility = function(seconds)
 {
 	invincible = true;
-	sprite_index = Sp_Test_inv;
 	global.gameState.timerManager.Add(seconds, function()
 	{
 		invincible = false;
-		sprite_index = Sp_Test;
 	}, id);
 }
 
