@@ -15,13 +15,14 @@ spawnPoints = array_create(0);
 AddSpawnPoint = function(_x, _y)
 {
 	array_push(spawnPoints, new Vector2(_x, _y));
+	return array_length(spawnPoints) - 1;
 }
 
 /// @param {Real} wave
 /// @param {Asset.GMObject} type
 /// @param {Real} spawnPointIndex
 /// @param {Real} delay
-AddSpawnerEntry = function(wave, type, spawnPointIndex, delay)
+AddSpawnerEntry = function(wave, type, spawnPointIndex, delay, _direction = 0)
 {
 	var arrayLength = array_length(waves);
 	if (arrayLength >= wave)
@@ -34,5 +35,5 @@ AddSpawnerEntry = function(wave, type, spawnPointIndex, delay)
 		}
 	}
 	
-	array_push(waves[wave], new SpawnerEntry(type, spawnPointIndex, delay));
+	array_push(waves[wave], new SpawnerEntry(type, spawnPointIndex, delay, _direction));
 }

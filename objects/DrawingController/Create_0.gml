@@ -32,6 +32,11 @@ CloseLoop = function()
 		{
 			var enemyInstance = layer_instance_get_instance(enemy);
 			var gridPosition = GetPositionVector(enemyInstance);
+			
+			if (!object_is_ancestor(enemyInstance.object_index, EnemyBase) && !object_is_ancestor(enemyInstance.object_index, Pickup))
+			{
+				return;
+			}
 			gridPosition.DivideByReal(scaleFactor);
 			gridPosition.Floor();
 			if (collisionChecker.GetValue(gridPosition.x, gridPosition.y) == 0)

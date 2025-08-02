@@ -23,6 +23,10 @@ array_foreach(waves[currentWave], function(entry, index)
 			// Register a function to our delegate! When our enemy dies, it will call this function below,
 			// and increase our currentEnemyKillCount by 1
 			newlySpawnedEnemy.onDeath.Register(id, function() { ++currentEnemyKillCount; });
+			if (entry.walkDirection != 0)
+			{
+				newlySpawnedEnemy.walkDirection = entry.walkDirection;
+			}
 		}
 	});
 	
