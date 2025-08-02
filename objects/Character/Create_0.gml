@@ -78,7 +78,7 @@ Push = function(delta, target, stackDepth = 0)
 	var enemiesHit = Sweep(delta, target)
 	var numEnemies = ds_list_size(enemiesHit);
 	
-	for (i = 0; i < numEnemies; ++i)
+	for (var i = 0; i < numEnemies; ++i)
 	{
 		var enemy = ds_list_find_value(enemiesHit, i);
 		if (delta.x > 0)
