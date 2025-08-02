@@ -1,4 +1,4 @@
-if (grounded)
+if (grounded && other.jumpDirection = walkDirection)
 {
 	Jump();
 }
