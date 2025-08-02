@@ -1,21 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"ArmoredEnemy",
+  "%Name":"Explosion",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":72,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"ArmoredEnemy",
+  "name":"Explosion",
   "overriddenProperties":[],
   "parent":{
-    "name":"ArmoredEnemies",
-    "path":"folders/Characters/Enemies/BackgroundEnemies/ArmoredEnemies.yy",
+    "name":"Explosion",
+    "path":"folders/Characters/Enemies/ForegroundEnemies/Goomba/Bombito/Explosion.yy",
   },
-  "parentObjectId":{
-    "name":"BackgroundEnemy",
-    "path":"objects/BackgroundEnemy/BackgroundEnemy.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -34,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sp_ArmoredEnemyPh",
-    "path":"sprites/Sp_ArmoredEnemyPh/Sp_ArmoredEnemyPh.yy",
+    "name":"Sp_Explosion",
+    "path":"sprites/Sp_Explosion/Sp_Explosion.yy",
   },
   "spriteMaskId":null,
   "visible":true,
