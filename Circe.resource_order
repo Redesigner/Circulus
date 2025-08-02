@@ -52,6 +52,7 @@
     {"name":"Swordsmin","order":1,"path":"objects/Swordsmin/Swordsmin.yy",},
     {"name":"TurnAroundHitbox","order":4,"path":"objects/TurnAroundHitbox/TurnAroundHitbox.yy",},
     {"name":"Level1","order":1,"path":"rooms/Level1/Level1.yy",},
+    {"name":"Level2","order":2,"path":"rooms/Level2/Level2.yy",},
     {"name":"RoomUI","order":7,"path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"ArrayHelpers","order":4,"path":"scripts/ArrayHelpers/ArrayHelpers.yy",},
     {"name":"Delegate","order":1,"path":"scripts/Delegate/Delegate.yy",},
