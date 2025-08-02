@@ -188,6 +188,7 @@
     {"id":{"name":"Sp_TestEnemy","path":"sprites/Sp_TestEnemy/Sp_TestEnemy.yy",},},
     {"id":{"name":"Sp_TestEnemyStunned","path":"sprites/Sp_TestEnemyStunned/Sp_TestEnemyStunned.yy",},},
     {"id":{"name":"Ts_Floors","path":"tilesets/Ts_Floors/Ts_Floors.yy",},},
+    {"id":{"name":"Ts_foreground","path":"tilesets/Ts_foreground/Ts_foreground.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
