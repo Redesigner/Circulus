@@ -11,15 +11,17 @@ isDodging = false;
 canDoubleJump = true;
 airControlFactor = 0.1
 invincible = false;
-hitPoints = 10;
-maxHitPoints = 10;
+hitPoints = 3;
+maxHitPoints = 3;
 input_presses = 0;
 damageInvTime = 0.5; // seconds
 damageInv = false; // Invuln from taking damage
 key_pressed_left = keyboard_check_pressed(ord("A"));
 key_pressed_right = keyboard_check_pressed(ord("D"));
 dead = false;
+playingSequence = 0;
 
+playerDrawingSprite = instance_create_depth(x, y, depth + 1, PlayerDrawing);
 // collisionLayer = [ layer_tilemap_get_id("Floor"), SwordHurtbox ];
 
 TryJump = function()
@@ -89,9 +91,11 @@ Dodge = function()
 	isDodging = true;
 	velocity.x = dodgeSpeed * inputAxis;
 	Invincibility(dodgeLength);
+	PlayAnimationOnce(Sp_PlayerSlide2, false);
 	global.gameState.timerManager.Add(dodgeLength, function()
 	{
 		isDodging = false;
+		CancelOneShot();
 	}, id);
 }
 
@@ -116,18 +120,27 @@ TakeDamage = function(damage, hitNormal = new Vector2())
 	hitPoints -= damage;
 	PlayAnimationOnce(Sp_PlayerDamage, true);
 	
-	if (!hitNormal.IsZero())
+	/*if (!hitNormal.IsZero())
 	{
 		hitNormal.MultiplyReal(500);
 		hitNormal.y = 50;
 		velocity.Add(hitNormal);
-	}
+	}*/
 	
 	if (hitPoints <= 0)
 	{
 		hitPoints = 0;
 		Die();
 	}
+	
+	global.gameState.playerCanUnpause = false;
+	global.paused = true;
+	call_later(0.2, time_source_units_seconds, function()
+		{
+			global.gameState.playerCanUnpause = true;
+			global.paused = false;
+		});
+	
 	damageInv = true;
 	global.gameState.timerManager.Add(damageInvTime, function(){ damageInv = false; }, id);
 	show_debug_message("{0} took damage! {1} health remaining", id, hitPoints);
@@ -136,6 +149,13 @@ TakeDamage = function(damage, hitNormal = new Vector2())
 Die = function()
 {
 	dead = true;
+	playingSequence = layer_sequence_create(layer, x, y, Sq_PlayerDie);
+	visible = false;
+	global.gameState.timerManager.Add(1.9, function()
+		{
+			layer_sequence_destroy(playingSequence);
+			global.gameState.GameOver();
+		}, id);
 }
 
 Heal = function(value)

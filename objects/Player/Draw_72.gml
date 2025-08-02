@@ -11,3 +11,5 @@ if (grounded && !playingOneShot)
 		sprite_index = Sp_PlayerWalk;
 	}
 }
+
+playerDrawingSprite.image_xscale = image_xscale;
