@@ -7,7 +7,7 @@ if (global.paused)
 //Increase timer by the the number of seconds passed since out last step
 timer+= DeltaTimeSeconds();
 
-if (currentWave == totalWaves)
+if (currentWave > totalWaves)
 {
 	instance_destroy();
 }
