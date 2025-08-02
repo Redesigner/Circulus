@@ -1,5 +1,7 @@
 event_inherited();
 
+movementPeriod = 20;
+
 // Override
 Circle = function()
 {
@@ -21,6 +23,5 @@ Tap = function()
 	Stun(4.0);
 }
 
-movementStrength = 20;
-movementPeriod = 1;
-movementType = MovementType.Circle;
+localTime = 0;
+targetPosition = GetPositionVector(id);

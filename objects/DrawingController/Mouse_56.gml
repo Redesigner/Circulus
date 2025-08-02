@@ -6,11 +6,16 @@ if (global.paused)
 drawing = false;
 resetRequested = true;
 
-if (currentDrawValue > 4)
+if (inkActive)
 {
-	Slash();
+	if (currentDrawValue > 4)
+	{
+		Slash();
+	}
+	else
+	{
+		Tap();
+	}
 }
-else
-{
-	Tap();
-}
+
+inkActive = false;
