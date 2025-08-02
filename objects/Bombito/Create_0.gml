@@ -8,3 +8,7 @@ Explode = function()
 	instance_create_depth(x, y, depth - 1, Explosion);
 	instance_destroy(id);
 }
+
+Stomp = function()
+{
+}

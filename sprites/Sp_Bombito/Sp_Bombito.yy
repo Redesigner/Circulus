@@ -1,11 +1,11 @@
 {
   "$GMSprite":"",
   "%Name":"Sp_Bombito",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":31,
   "bbox_left":0,
   "bbox_right":15,
-  "bbox_top":5,
+  "bbox_top":16,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,

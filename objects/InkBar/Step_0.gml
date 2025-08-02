@@ -1,1 +1,1 @@
-percentage = (20 - drawingController.currentDrawValue) / 20;
+percentage = (drawingController.inkMax - drawingController.currentDrawValue) / drawingController.inkMax;

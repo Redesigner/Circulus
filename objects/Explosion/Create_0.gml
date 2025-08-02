@@ -1,1 +1,1 @@
-global.gameState.timerManager.Add(0.2, function() { instance_destroy(id); }, id);
+global.gameState.timerManager.Add(0.5, function() { instance_destroy(id); }, id);
