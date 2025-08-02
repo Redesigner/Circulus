@@ -3,7 +3,7 @@ if (global.paused)
 	return;
 }
 
-drawing = false;
+global.drawing = false;
 resetRequested = true;
 
 if (inkActive)

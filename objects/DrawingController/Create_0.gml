@@ -1,4 +1,4 @@
-drawing = false;
+global.drawing = false;
 resetRequested = false;
 currentDrawValue = 0;
 scaleFactor = 8;
