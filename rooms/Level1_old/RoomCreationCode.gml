@@ -1,10 +1,10 @@
 var spawner = instance_create_layer(0, 0, "Game", Spawner);
 
-spawner.AddSpawnPoint(80, 64);
-spawner.AddSpawnPoint(240, 64);
-spawner.AddSpawnPoint(400, 64);
-spawner.AddSpawnPoint(40, 200);
-spawner.AddSpawnPoint(450, 200);
+spawner.AddSpawnPoint(95, 64);
+spawner.AddSpawnPoint(160, 64);
+spawner.AddSpawnPoint(225, 64);
+spawner.AddSpawnPoint(40, 125);
+spawner.AddSpawnPoint(275, 125);
 
 //Wave 1
 spawner.AddSpawnerEntry(0, TestEnemy, 0, 1);
