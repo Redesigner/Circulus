@@ -32,13 +32,13 @@ spawner.AddSpawnerEntry(1, Greatswordsmin, fg_left, 3, 1);
 spawner.AddSpawnerEntry(1, Greatswordsmin, fg_right, 4, -1);
 
 //Wave 3
-spawner.AddSpawnerEntry(2, ArmoredEnemy, bg_leftUp, 2);
+spawner.AddSpawnerEntry(2, Eyer, bg_leftUp, 2);
 spawner.AddSpawnerEntry(2, Popper, bg_left, 2);
 spawner.AddSpawnerEntry(2, Greatswordsmin, fg_left, 1, 1);
 spawner.AddSpawnerEntry(2, Swordsmin, fg_left, 2, 1);
 spawner.AddSpawnerEntry(2, Swordsmin, fg_left, 3, 1);
 spawner.AddSpawnerEntry(2, Swordsmin, fg_left, 4, 1);
-spawner.AddSpawnerEntry(2, ArmoredEnemy, bg_rightUp, 5);
+spawner.AddSpawnerEntry(2, Eyer, bg_rightUp, 5);
 spawner.AddSpawnerEntry(2, Popper, bg_right, 5);
 spawner.AddSpawnerEntry(2, Swordsmin, fg_left, 5, 1);
 spawner.AddSpawnerEntry(2, Swordsmin, fg_left, 6, 1);

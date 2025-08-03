@@ -29,8 +29,8 @@ spawner.AddSpawnerEntry(1, Greatswordsmin, fg_left, 2, 1);
 spawner.AddSpawnerEntry(1, Greatswordsmin, fg_left, 4, 1);
 spawner.AddSpawnerEntry(1, Greatswordsmin, fg_left, 6, 1);
 
-spawner.AddSpawnerEntry(1, ArmoredEnemy, bg_up, 8);
-spawner.AddSpawnerEntry(1, ArmoredEnemy, bg_down, 8);
+spawner.AddSpawnerEntry(1, Eyer, bg_up, 8);
+spawner.AddSpawnerEntry(1, Eyer, bg_down, 8);
 
 spawner.AddSpawnerEntry(1, Bombito, fg_right, 12, -1);
 
@@ -55,5 +55,5 @@ spawner.AddSpawnerEntry(5, Helmer, fg_left, 1, 1);	//Helmer
 //Wave 7
 spawner.AddSpawnerEntry(6, Bombito, fg_right, 2, -1);
 spawner.AddSpawnerEntry(6, Bombito, fg_left, 4, 1);
-spawner.AddSpawnerEntry(6, ArmoredEnemy, bg_left, 2);
-spawner.AddSpawnerEntry(6, ArmoredEnemy, bg_right, 2);
+spawner.AddSpawnerEntry(6, Eyer, bg_left, 2);
+spawner.AddSpawnerEntry(6, Eyer, bg_right, 2);

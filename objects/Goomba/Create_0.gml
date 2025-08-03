@@ -1,6 +1,6 @@
 event_inherited();
 
-collisionLayer = [ layer_tilemap_get_id("Floor"), Goomba, Player ];
+collisionLayer = [ layer_tilemap_get_id("Floor"), /*Goomba,*/ Player ];
 target = instance_find(Player, 0);
 canCollide = true;
 
