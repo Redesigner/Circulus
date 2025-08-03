@@ -14,6 +14,8 @@ fireTimer = random_range(fireRateMin, fireRateMax);
 isStunned = false;
 stunTimer = -1;
 
+heartChance = 0.2;
+
 TakeDamage = function(damage)
 {
 	if (damage <= 0)
@@ -79,7 +81,11 @@ Die = function()
 	}
 	call_later(0.5, time_source_units_seconds,  destroySelf);
 	
-	instance_create_layer(x, (bbox_top + bbox_bottom) / 2, "Enemies", HealthPickup);
+	var randomValue = random_range(0, 1);
+	if (randomValue < heartChance)
+	{
+		instance_create_layer(x, (bbox_top + bbox_bottom) / 2, "Enemies", HealthPickup);
+	}
 	onDeath.Invoke();
 }
 
