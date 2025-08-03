@@ -56,31 +56,31 @@ spawner.AddSpawnerEntry(1, Bombito, fg_right, 16, -1);
 
 //Wave 3
 spawner.AddSpawnerEntry(2, ArmoredEnemy, bg_leftUp, 1);
-spawner.AddSpawnerEntry(2, TestEnemy, bg_leftRight, 1);
+spawner.AddSpawnerEntry(2, Popper, bg_leftRight, 1);
 spawner.AddSpawnerEntry(2, ArmoredEnemy, bg_leftDown, 1);
-spawner.AddSpawnerEntry(2, TestEnemy, bg_leftLeft, 1);
+spawner.AddSpawnerEntry(2, Popper, bg_leftLeft, 1);
 spawner.AddSpawnerEntry(2, Greatswordsmin, fg_left, 2, 1); //Dueler
 spawner.AddSpawnerEntry(2, Greatswordsmin, fg_right, 2, -1); //Dueler
 
 //Wave 4
-spawner.AddSpawnerEntry(3, TestEnemy, bg_leftLeft, 1);
-spawner.AddSpawnerEntry(3, TestEnemy, bg_lowerLeft, 2);
-spawner.AddSpawnerEntry(3, TestEnemy, bg_rightRight, 3);
-spawner.AddSpawnerEntry(3, TestEnemy, bg_lowerRight, 4);
+spawner.AddSpawnerEntry(3, Popper, bg_leftLeft, 1);
+spawner.AddSpawnerEntry(3, Popper, bg_lowerLeft, 2);
+spawner.AddSpawnerEntry(3, Popper, bg_rightRight, 3);
+spawner.AddSpawnerEntry(3, Popper, bg_lowerRight, 4);
 spawner.AddSpawnerEntry(3, Greatswordsmin, fg_left, 2, 1); //Dueler
 spawner.AddSpawnerEntry(3, Greatswordsmin, fg_right, 4, -1); //Dueler
 
 
 //Wave 5
-spawner.AddSpawnerEntry(4, TestEnemy, bg_leftLeft, 1);
-spawner.AddSpawnerEntry(4, TestEnemy, bg_left, 1);
-spawner.AddSpawnerEntry(4, TestEnemy, bg_leftRight, 1);
-spawner.AddSpawnerEntry(4, TestEnemy, bg_middle, 1);
-spawner.AddSpawnerEntry(4, TestEnemy, bg_middleLeft, 1);
-spawner.AddSpawnerEntry(4, TestEnemy, bg_middleRight, 1);
-spawner.AddSpawnerEntry(4, TestEnemy, bg_rightLeft, 1);
-spawner.AddSpawnerEntry(4, TestEnemy, bg_right, 1);
-spawner.AddSpawnerEntry(4, TestEnemy, bg_rightRight, 1);
+spawner.AddSpawnerEntry(4, Popper, bg_leftLeft, 1);
+spawner.AddSpawnerEntry(4, Popper, bg_left, 1);
+spawner.AddSpawnerEntry(4, Popper, bg_leftRight, 1);
+spawner.AddSpawnerEntry(4, Popper, bg_middle, 1);
+spawner.AddSpawnerEntry(4, Popper, bg_middleLeft, 1);
+spawner.AddSpawnerEntry(4, Popper, bg_middleRight, 1);
+spawner.AddSpawnerEntry(4, Popper, bg_rightLeft, 1);
+spawner.AddSpawnerEntry(4, Popper, bg_right, 1);
+spawner.AddSpawnerEntry(4, Popper, bg_rightRight, 1);
 
 //Wave 6
 spawner.AddSpawnerEntry(5, Greatswordsmin, fg_left, 1, 1);
@@ -102,10 +102,10 @@ spawner.AddSpawnerEntry(6, ArmoredEnemy, bg_left, 1);
 spawner.AddSpawnerEntry(6, ArmoredEnemy, bg_middle, 1);
 spawner.AddSpawnerEntry(6, ArmoredEnemy, bg_right, 1);
 
-spawner.AddSpawnerEntry(6, TestEnemy, bg_leftUp, 2);
-spawner.AddSpawnerEntry(6, TestEnemy, bg_middleUp, 2);
-spawner.AddSpawnerEntry(6, TestEnemy, bg_rightUp, 2);
+spawner.AddSpawnerEntry(6, Popper, bg_leftUp, 2);
+spawner.AddSpawnerEntry(6, Popper, bg_middleUp, 2);
+spawner.AddSpawnerEntry(6, Popper, bg_rightUp, 2);
 
-spawner.AddSpawnerEntry(6, TestEnemy, bg_leftDown, 3);
-spawner.AddSpawnerEntry(6, TestEnemy, bg_middleDown, 3);
-spawner.AddSpawnerEntry(6, TestEnemy, bg_rightDown, 3);
+spawner.AddSpawnerEntry(6, Popper, bg_leftDown, 3);
+spawner.AddSpawnerEntry(6, Popper, bg_middleDown, 3);
+spawner.AddSpawnerEntry(6, Popper, bg_rightDown, 3);

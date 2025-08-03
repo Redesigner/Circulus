@@ -14,20 +14,20 @@ var fg_left = spawner.AddSpawnPoint(60, 220);
 var fg_right = spawner.AddSpawnPoint(430, 220); 
 
 //Wave 1
-spawner.AddSpawnerEntry(0, TestEnemy, bg_left, 1);
+spawner.AddSpawnerEntry(0, Popper, bg_left, 1);
 
 //Wave 2
-spawner.AddSpawnerEntry(1, TestEnemy, bg_left, 2);
-spawner.AddSpawnerEntry(1, TestEnemy, bg_right, 4);
-spawner.AddSpawnerEntry(1, TestEnemy, bg_left, 6);
+spawner.AddSpawnerEntry(1, Popper, bg_left, 2);
+spawner.AddSpawnerEntry(1, Popper, bg_right, 4);
+spawner.AddSpawnerEntry(1, Popper, bg_left, 6);
 	
 //Wave 3
 spawner.AddSpawnerEntry(2, ArmoredEnemy, bg_up, 0);
 
 //Wave 4
-spawner.AddSpawnerEntry(3, TestEnemy, bg_left, 2);
+spawner.AddSpawnerEntry(3, Popper, bg_left, 2);
 spawner.AddSpawnerEntry(3, ArmoredEnemy, bg_middle, 2);
-spawner.AddSpawnerEntry(3, TestEnemy, bg_right, 2);
+spawner.AddSpawnerEntry(3, Popper, bg_right, 2);
 
 spawner.AddSpawnerEntry(3, Swordsmin, fg_right, 8, -1);
 

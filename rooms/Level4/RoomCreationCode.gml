@@ -15,15 +15,15 @@ var fg_right = spawner.AddSpawnPoint(415, 200);
 
 
 //Wave 1
-spawner.AddSpawnerEntry(0, TestEnemy, bg_right, 2);
-spawner.AddSpawnerEntry(0, TestEnemy, bg_left, 2);
-spawner.AddSpawnerEntry(0, TestEnemy, bg_up, 2);
-spawner.AddSpawnerEntry(0, TestEnemy, bg_down, 2);
+spawner.AddSpawnerEntry(0, Popper, bg_right, 2);
+spawner.AddSpawnerEntry(0, Popper, bg_left, 2);
+spawner.AddSpawnerEntry(0, Popper, bg_up, 2);
+spawner.AddSpawnerEntry(0, Popper, bg_down, 2);
 
 //Wave 2
-spawner.AddSpawnerEntry(1, TestEnemy, bg_right, 2);
-spawner.AddSpawnerEntry(1, TestEnemy, bg_left, 2);
-spawner.AddSpawnerEntry(1, TestEnemy, bg_middle, 2);
+spawner.AddSpawnerEntry(1, Popper, bg_right, 2);
+spawner.AddSpawnerEntry(1, Popper, bg_left, 2);
+spawner.AddSpawnerEntry(1, Popper, bg_middle, 2);
 
 spawner.AddSpawnerEntry(1, Greatswordsmin, fg_left, 2, 1);
 spawner.AddSpawnerEntry(1, Greatswordsmin, fg_left, 4, 1);
@@ -45,8 +45,8 @@ spawner.AddSpawnerEntry(3, Diver, bg_left, 2);
 //Wave 5
 spawner.AddSpawnerEntry(4, Diver, bg_left, 2);
 spawner.AddSpawnerEntry(4, Diver, bg_right, 4);
-spawner.AddSpawnerEntry(4, TestEnemy, bg_lowerLeft, 1);
-spawner.AddSpawnerEntry(4, TestEnemy, bg_lowerRight, 1);
+spawner.AddSpawnerEntry(4, Popper, bg_lowerLeft, 1);
+spawner.AddSpawnerEntry(4, Popper, bg_lowerRight, 1);
 
 //Wave 6
 spawner.AddSpawnerEntry(5, Swordsmin, fg_right, 1, -1); //Helmer

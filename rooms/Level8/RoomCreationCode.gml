@@ -28,24 +28,24 @@ var fg_right = spawner.AddSpawnPoint(450, 175);
 //Wave 1
 spawner.AddSpawnerEntry(0, CloudEnemy, bg_right, 1);
 
-spawner.AddSpawnerEntry(0, TestEnemy, bg_left, 10);
-spawner.AddSpawnerEntry(0, TestEnemy, bg_right, 10);
+spawner.AddSpawnerEntry(0, Popper, bg_left, 10);
+spawner.AddSpawnerEntry(0, Popper, bg_right, 10);
 
-spawner.AddSpawnerEntry(0, TestEnemy, bg_rightLeft, 15);
+spawner.AddSpawnerEntry(0, Popper, bg_rightLeft, 15);
 spawner.AddSpawnerEntry(0, ArmoredEnemy, bg_left, 15);
 spawner.AddSpawnerEntry(0, ArmoredEnemy, bg_right, 15);
-spawner.AddSpawnerEntry(0, TestEnemy, bg_leftRight, 15);
+spawner.AddSpawnerEntry(0, Popper, bg_leftRight, 15);
 
-spawner.AddSpawnerEntry(0, TestEnemy, bg_rightRight, 20);
+spawner.AddSpawnerEntry(0, Popper, bg_rightRight, 20);
 spawner.AddSpawnerEntry(0, ArmoredEnemy, bg_leftUp, 20);
 spawner.AddSpawnerEntry(0, ArmoredEnemy, bg_rightDown, 20);
-spawner.AddSpawnerEntry(0, TestEnemy, bg_leftLeft, 20);
+spawner.AddSpawnerEntry(0, Popper, bg_leftLeft, 20);
 spawner.AddSpawnerEntry(0, ArmoredEnemy, bg_up, 20);
-spawner.AddSpawnerEntry(0, TestEnemy, bg_down, 20);
+spawner.AddSpawnerEntry(0, Popper, bg_down, 20);
 
-spawner.AddSpawnerEntry(0, TestEnemy, bg_leftLeft, 25);
-spawner.AddSpawnerEntry(0, TestEnemy, bg_leftRight, 25);
-spawner.AddSpawnerEntry(0, TestEnemy, bg_middleLeft, 25);
-spawner.AddSpawnerEntry(0, TestEnemy, bg_middleRight, 25);
-spawner.AddSpawnerEntry(0, TestEnemy, bg_rightLeft, 25);
-spawner.AddSpawnerEntry(0, TestEnemy, bg_rightRight, 25);
+spawner.AddSpawnerEntry(0, Popper, bg_leftLeft, 40);
+spawner.AddSpawnerEntry(0, Popper, bg_leftRight, 40);
+spawner.AddSpawnerEntry(0, Popper, bg_middleLeft, 40);
+spawner.AddSpawnerEntry(0, Popper, bg_middleRight, 40);
+spawner.AddSpawnerEntry(0, Popper, bg_rightLeft, 40);
+spawner.AddSpawnerEntry(0, Popper, bg_rightRight, 40);
