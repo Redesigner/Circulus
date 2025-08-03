@@ -5,7 +5,7 @@ maxHitPoints = 3;
 playingOneShot = false;
 oneShotCallback = function(){};
 cancelOneShot = false;
-
+isStunned = false;
 animationSpeed = 1;
 
 /// @param {Asset.GMSprite} animation

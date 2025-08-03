@@ -1,4 +1,4 @@
-image_speed = global.paused ? 0 : animationSpeed;
+image_speed = global.paused || isStunned ? 0 : animationSpeed;
 if (velocity.x > 0)
 {
 	image_xscale = 1;

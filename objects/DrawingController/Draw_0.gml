@@ -16,6 +16,10 @@ if (global.drawing && global.canDraw)
 		DrawLine(mousePosition, previousMousePosition, 2);	
 		surface_reset_target();
 	}
+	else
+	{
+		canvas = surface_create(room_width, room_height, surface_rgba8unorm);
+	}
 
 	currentDrawValue += sqrt(previousMousePosition.DistanceSquared(mousePosition) / 100);
 	
