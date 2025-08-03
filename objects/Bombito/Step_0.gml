@@ -12,7 +12,7 @@ if (!active)
 	if (GetPositionVector(id).DistanceSquared(GetPositionVector(target)) < explosionDistance * explosionDistance)
 	{
 		active = true;
-		global.gameState.timerManager.Add(5, Explode, id);
+		timer = global.gameState.timerManager.Add(5, Explode, id);
 	}
 }
 

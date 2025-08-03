@@ -90,3 +90,6 @@ Tap = function()
 	}
 	collisionChecker.Clear();
 }
+
+cursor_sprite = Sp_Cursor;
+window_set_cursor(cr_none);

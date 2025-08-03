@@ -2,6 +2,7 @@
   "FolderOrderSettings":[
     {"name":"Sounds","order":1,"path":"folders/Characters/Enemies/Sounds.yy",},
     {"name":"Music","order":1,"path":"folders/Music.yy",},
+    {"name":"Cursor","order":1,"path":"folders/Ui/Cursor.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"Sfx_Death","order":4,"path":"sounds/Sfx_Death/Sfx_Death.yy",},

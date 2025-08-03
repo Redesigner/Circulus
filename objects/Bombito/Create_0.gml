@@ -1,7 +1,9 @@
 event_inherited();
 
-explosionDistance = 20;
+explosionDistance = 100;
 active = false;
+timer = 0;
+image_speed = 0;
 
 Explode = function()
 {
