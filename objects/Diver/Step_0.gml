@@ -6,7 +6,7 @@ if (global.paused || isStunned)
 if (divingTimer)
 {
 	z = sin(divingTimer.ElapsedTimePercent() * pi);
-	var scale = 1 + z;
+	var scale = z / 2 + 0.5;
 	image_xscale = scale;
 	image_yscale = scale;
 	canCollide = z > 0.8;

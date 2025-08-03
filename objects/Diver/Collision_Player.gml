@@ -1,4 +1,4 @@
 if (canCollide)
 {
-	other.TakeDamage(3);
+	other.TakeDamage(1);
 }

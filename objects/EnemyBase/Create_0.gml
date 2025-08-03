@@ -11,7 +11,6 @@ canCollide = false;
 
 fireTimerCurrent = 0;
 fireTimer = random_range(fireRateMin, fireRateMax);
-isStunned = false;
 stunTimer = -1;
 
 heartChance = 0.2;

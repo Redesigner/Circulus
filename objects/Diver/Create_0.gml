@@ -5,6 +5,8 @@ startingPosition = GetPositionVector(id);
 targetPosition = new Vector2();
 canCollide = false;
 startingDepth = depth;
+image_xscale = 0.5;
+image_yscale = 0.5;
 
 onStunned.Register(id, function()
 	{
@@ -32,6 +34,7 @@ onUnstunned.Register(id, function()
 	
 onDeath.Register(id, function()
 	{
+		PlayAnimationOnce(Sp_DiverDie, false);
 		if (divingStartTimer != 0)
 		{
 			divingStartTimer.Pause();

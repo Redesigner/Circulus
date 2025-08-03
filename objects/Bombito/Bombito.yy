@@ -38,6 +38,9 @@
     "name":"Sp_Bombito",
     "path":"sprites/Sp_Bombito/Sp_Bombito.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"Sp_Bombito",
+    "path":"sprites/Sp_Bombito/Sp_Bombito.yy",
+  },
   "visible":true,
 }

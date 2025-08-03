@@ -1,5 +1,6 @@
 global.gameState = id;
 
+global.debugEnabled = false;
 global.paused = false;
 global.drawDebug = false;
 

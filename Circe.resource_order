@@ -5,6 +5,7 @@
     {"name":"Cursor","order":1,"path":"folders/Ui/Cursor.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"Diver","order":1,"path":"objects/Diver/Diver.yy",},
     {"name":"Sfx_Death","order":4,"path":"sounds/Sfx_Death/Sfx_Death.yy",},
     {"name":"Sfx_Fire","order":2,"path":"sounds/Sfx_Fire/Sfx_Fire.yy",},
     {"name":"Sfx_Heal","order":8,"path":"sounds/Sfx_Heal/Sfx_Heal.yy",},
@@ -13,6 +14,12 @@
     {"name":"Sfx_Stomp","order":3,"path":"sounds/Sfx_Stomp/Sfx_Stomp.yy",},
     {"name":"Sfx_Stun","order":1,"path":"sounds/Sfx_Stun/Sfx_Stun.yy",},
     {"name":"Sfx_Victory","order":5,"path":"sounds/Sfx_Victory/Sfx_Victory.yy",},
+    {"name":"Sp_BombitoExplode","order":1,"path":"sprites/Sp_BombitoExplode/Sp_BombitoExplode.yy",},
+    {"name":"Sp_BombitoFall","order":2,"path":"sprites/Sp_BombitoFall/Sp_BombitoFall.yy",},
+    {"name":"Sp_DiverDie","order":1,"path":"sprites/Sp_DiverDie/Sp_DiverDie.yy",},
+    {"name":"Sp_Eyer","order":2,"path":"sprites/Sp_Eyer/Sp_Eyer.yy",},
+    {"name":"Sp_EyerAttack","order":3,"path":"sprites/Sp_EyerAttack/Sp_EyerAttack.yy",},
+    {"name":"Sp_EyerHit","order":1,"path":"sprites/Sp_EyerHit/Sp_EyerHit.yy",},
     {"name":"Sp_Logo","order":1,"path":"sprites/Sp_Logo/Sp_Logo.yy",},
   ],
 }
