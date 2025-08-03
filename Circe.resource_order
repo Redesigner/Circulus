@@ -14,6 +14,8 @@
     {"name":"Popper","order":5,"path":"folders/Characters/Enemies/BackgroundEnemies/Popper.yy",},
     {"name":"Sprites","order":1,"path":"folders/Characters/Enemies/BackgroundEnemies/Popper/Sprites.yy",},
     {"name":"Sprites","order":2,"path":"folders/Characters/Enemies/BackgroundEnemies/TestEnemy/Sprites.yy",},
+    {"name":"EnemySpawner","order":6,"path":"folders/Characters/Enemies/EnemySpawner.yy",},
+    {"name":"Sprites","order":1,"path":"folders/Characters/Enemies/EnemySpawner/Sprites.yy",},
     {"name":"ForegroundEnemies","order":4,"path":"folders/Characters/Enemies/ForegroundEnemies.yy",},
     {"name":"Cloud","order":1,"path":"folders/Characters/Enemies/ForegroundEnemies/Cloud.yy",},
     {"name":"Sprites","order":1,"path":"folders/Characters/Enemies/ForegroundEnemies/Cloud/Sprites.yy",},
