@@ -208,6 +208,7 @@
     {"id":{"name":"Sp_Countdown","path":"sprites/Sp_Countdown/Sp_Countdown.yy",},},
     {"id":{"name":"Sp_Cursor","path":"sprites/Sp_Cursor/Sp_Cursor.yy",},},
     {"id":{"name":"Sp_DashCloud","path":"sprites/Sp_DashCloud/Sp_DashCloud.yy",},},
+    {"id":{"name":"Sp_DiverDie","path":"sprites/Sp_DiverDie/Sp_DiverDie.yy",},},
     {"id":{"name":"Sp_DiverPh","path":"sprites/Sp_DiverPh/Sp_DiverPh.yy",},},
     {"id":{"name":"Sp_Drawing","path":"sprites/Sp_Drawing/Sp_Drawing.yy",},},
     {"id":{"name":"Sp_DulerDie","path":"sprites/Sp_DulerDie/Sp_DulerDie.yy",},},
