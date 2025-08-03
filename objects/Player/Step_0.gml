@@ -6,8 +6,7 @@ if (global.paused || dead)
 // This should probably be temporary, but it makes sure the character doesn't fall off the screen and get stuck
 if (y > room_height + 32)
 {
-	y = 0;
-	velocity.y = 0;
+	Fall();
 }
 
 var input = InputAxis(ord("D"), ord("A"));
