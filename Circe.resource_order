@@ -1,5 +1,7 @@
 {
-  "FolderOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"Cursor","order":1,"path":"folders/Ui/Cursor.yy",},
+  ],
   "ResourceOrderSettings":[
     {"name":"Sp_Logo","order":1,"path":"sprites/Sp_Logo/Sp_Logo.yy",},
   ],
