@@ -1,6 +1,6 @@
 event_inherited();
 
-swordYOffset = -6;
+swordYOffset = -14;
 sword = instance_create_layer(bbox_left + sprite_get_bbox_left(Sp_SwordPh), y + swordYOffset, layer, SwordHurtbox);
 walkDirection = -1;
 

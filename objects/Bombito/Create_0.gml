@@ -5,6 +5,7 @@ active = false;
 
 Explode = function()
 {
+	onDeath.Invoke();
 	instance_create_depth(x, y, depth - 1, Explosion);
 	instance_destroy(id);
 }
