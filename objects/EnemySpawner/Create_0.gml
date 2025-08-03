@@ -14,4 +14,6 @@ SpawnEnemy = function()
 	instance_destroy(id);
 }
 
+audio_play_sound(Sfx_PortalSpawn, 2, false);
+
 spawnTimer = global.gameState.timerManager.Add(1, SpawnEnemy, id);

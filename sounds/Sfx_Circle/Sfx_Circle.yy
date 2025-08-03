@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"Sfx_Dash",
+  "%Name":"Sfx_Circle",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.9779365,
-  "name":"Sfx_Dash",
+  "duration":0.88696146,
+  "name":"Sfx_Circle",
   "parent":{
     "name":"Sounds",
     "path":"folders/Characters/Player/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"Sfx_Dash.wav",
+  "soundFile":"Sfx_Circle.wav",
   "type":0,
   "volume":1.0,
 }

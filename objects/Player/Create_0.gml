@@ -69,6 +69,7 @@ DoubleJump = function()
 LandOnGround = function()
 {
 	canDoubleJump = true;
+	audio_play_sound(Sfx_Land, 1, false);
 	if (sprite_index == Sp_PlayerJump)
 	{
 		CancelOneShot();
@@ -126,6 +127,8 @@ TakeDamage = function(damage, hitNormal = new Vector2())
 	
 	hitPoints -= damage;
 	PlayAnimationOnce(Sp_PlayerDamage, true);
+	audio_play_sound(Sfx_Hit, 1, false);
+
 	
 	/*if (!hitNormal.IsZero())
 	{
@@ -157,6 +160,7 @@ Die = function()
 {
 	dead = true;
 	playingSequence = layer_sequence_create(layer, x, y, Sq_PlayerDie);
+	audio_play_sound(Sfx_Death, 1, false);
 	instance_destroy(playerDrawingSprite);
 	visible = false;
 	global.canDraw = false;
@@ -174,5 +178,7 @@ Heal = function(value)
 		return;
 	}
 	
+	audio_play_sound(Sfx_Heal, 1, false);
 	hitPoints = min(hitPoints + value, maxHitPoints);
+	
 }

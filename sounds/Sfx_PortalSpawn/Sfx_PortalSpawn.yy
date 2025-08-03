@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"Sfx_Dash",
+  "%Name":"Sfx_PortalSpawn",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,17 +9,17 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.9779365,
-  "name":"Sfx_Dash",
+  "duration":0.40433106,
+  "name":"Sfx_PortalSpawn",
   "parent":{
     "name":"Sounds",
-    "path":"folders/Characters/Player/Sounds.yy",
+    "path":"folders/Characters/Enemies/Sounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"Sfx_Dash.wav",
+  "soundFile":"Sfx_PortalSpawn.wav",
   "type":0,
   "volume":1.0,
 }

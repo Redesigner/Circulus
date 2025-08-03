@@ -27,7 +27,7 @@ DrawLine = function(startPosition, endPosition, radius)
 CloseLoop = function()
 {
 	collisionChecker.Fill(200);
-
+	audio_play_sound(Sfx_Circle, 2, false);
 	var enemies = layer_get_all_elements("Enemies");
 	array_foreach(enemies, function(enemy, index)
 		{
@@ -52,7 +52,7 @@ CloseLoop = function()
 Slash = function()
 {
 	// collisionChecker.Grow();
-	
+	audio_play_sound(Sfx_Stun, 2, false);
 	var enemiesHitTotal = array_create(0);
 	var enemiesHit = ds_list_create();
 	var pixels = collisionChecker.GetPixels();
@@ -85,6 +85,7 @@ Tap = function()
 	for (var i = 0; i < enemyCount; ++i)
 	{
 		var enemy = ds_list_find_value(enemiesHit, i);
+		audio_play_sound(Sfx_Stun, 2, false);
 		enemy.Tap();
 	}
 	collisionChecker.Clear();

@@ -14,6 +14,7 @@ pushTimer = 0;
 
 Stomp = function()
 {
+	audio_play_sound(Sfx_Stomp, 2, false);
 	TakeDamage(10.0);
 }
 
