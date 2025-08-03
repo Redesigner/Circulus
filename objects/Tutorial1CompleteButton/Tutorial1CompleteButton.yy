@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"PlayerDrawing",
+  "%Name":"Tutorial1CompleteButton",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":53,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"PlayerDrawing",
+  "name":"Tutorial1CompleteButton",
   "overriddenProperties":[],
   "parent":{
-    "name":"Player",
-    "path":"folders/Characters/Player.yy",
+    "name":"StartButton",
+    "path":"folders/Ui/StartButton.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"Sp_Drawing",
-    "path":"sprites/Sp_Drawing/Sp_Drawing.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

@@ -40,4 +40,7 @@ Victory = function()
 	call_later(2.0, time_source_units_seconds, function() { room_goto_next(); });
 }
 
-RoomStart();
+if (room != Tutorial && room != TutorialControls)
+{
+	RoomStart();
+}

@@ -1,18 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"PlayerDrawing",
+  "%Name":"TutorialPopper",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":72,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"PlayerDrawing",
+  "name":"TutorialPopper",
   "overriddenProperties":[],
   "parent":{
-    "name":"Player",
-    "path":"folders/Characters/Player.yy",
+    "name":"Popper",
+    "path":"folders/Characters/Enemies/BackgroundEnemies/Popper.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"BackgroundEnemy",
+    "path":"objects/BackgroundEnemy/BackgroundEnemy.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sp_Drawing",
-    "path":"sprites/Sp_Drawing/Sp_Drawing.yy",
+    "name":"Sp_Popper",
+    "path":"sprites/Sp_Popper/Sp_Popper.yy",
   },
   "spriteMaskId":null,
   "visible":true,

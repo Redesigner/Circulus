@@ -23,7 +23,7 @@
                 {"$GMRInstance":"v2","%Name":"inst_71480A6F","colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_71480A6F","objectId":{"name":"InkBar","path":"objects/InkBar/InkBar.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
               ],"flexDirection":0,"height":{"unit":3,"value":8.0,},"justifyContent":1,"name":"InkBar","nodeColour":4283298376,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":64.0,},},
           ],"flexDirection":2,"height":{"unit":1,"value":80.0,},"justifyContent":1,"name":"MenuBar","nodeColour":4294068407,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":1,"value":320.0,},},
-      ],"flexDirection":2,"gridX":32,"gridY":32,"justifyContent":1,"name":"Hud","nodeColour":4294068407,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
+      ],"flexDirection":2,"gridX":32,"gridY":32,"justifyContent":1,"name":"Hud","nodeColour":4294068407,"resourceType":"GMRUILayer","resourceVersion":"2.0","visible":false,},
   ],
   "visible":true,
 }

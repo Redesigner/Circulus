@@ -19,9 +19,6 @@
     {"name":"inst_440A8332","path":"rooms/TestLevel/TestLevel.yy",},
     {"name":"inst_242FE7E9","path":"rooms/TestLevel/TestLevel.yy",},
     {"name":"inst_79A9AA3B","path":"rooms/TestLevel/TestLevel.yy",},
-    {"name":"inst_71480A6F","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_167CB1EE","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_E1C41F6","path":"roomui/RoomUI/RoomUI.yy",},
   ],
   "isDnd":false,
   "layers":[
