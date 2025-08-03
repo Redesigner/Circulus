@@ -35,9 +35,9 @@ spawner.AddSpawnerEntry(1, ArmoredEnemy, bg_down, 8);
 spawner.AddSpawnerEntry(1, Bombito, fg_right, 12, -1);
 
 //Wave 3
-spawner.AddSpawnerEntry(2, Swordsmin, fg_left, 2, 1); //Helmer
-spawner.AddSpawnerEntry(2, Swordsmin, fg_left, 3, 1); //Helmer
-spawner.AddSpawnerEntry(2, Swordsmin, fg_left, 4, 1); //Helmer
+spawner.AddSpawnerEntry(2, Helmer, fg_left, 2, 1); //Helmer
+spawner.AddSpawnerEntry(2, Helmer, fg_left, 3, 1); //Helmer
+spawner.AddSpawnerEntry(2, Helmer, fg_left, 4, 1); //Helmer
 
 //Wave 4
 spawner.AddSpawnerEntry(3, Diver, bg_left, 2);
@@ -49,8 +49,8 @@ spawner.AddSpawnerEntry(4, Popper, bg_lowerLeft, 1);
 spawner.AddSpawnerEntry(4, Popper, bg_lowerRight, 1);
 
 //Wave 6
-spawner.AddSpawnerEntry(5, Swordsmin, fg_right, 1, -1); //Helmer
-spawner.AddSpawnerEntry(5, Swordsmin, fg_left, 1, 1);	//Helmer
+spawner.AddSpawnerEntry(5, Helmer, fg_right, 1, -1); //Helmer
+spawner.AddSpawnerEntry(5, Helmer, fg_left, 1, 1);	//Helmer
 
 //Wave 7
 spawner.AddSpawnerEntry(6, Bombito, fg_right, 2, -1);

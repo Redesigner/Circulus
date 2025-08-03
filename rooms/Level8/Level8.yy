@@ -12,8 +12,6 @@
     {"name":"inst_76CC15A0_1_1_2_1_1_1_1_1_1_1","path":"rooms/Level8/Level8.yy",},
     {"name":"inst_479CF2A1_1_1_1_1_1_1_1_1","path":"rooms/Level8/Level8.yy",},
     {"name":"inst_18434F5E_1_1_1_1_1_1_1_1","path":"rooms/Level8/Level8.yy",},
-    {"name":"inst_71480A6F","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_167CB1EE","path":"roomui/RoomUI/RoomUI.yy",},
   ],
   "isDnd":false,
   "layers":[

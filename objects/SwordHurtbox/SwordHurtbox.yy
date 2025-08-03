@@ -34,5 +34,5 @@
     "path":"sprites/Sp_SwordPh/Sp_SwordPh.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
