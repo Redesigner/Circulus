@@ -1,7 +1,7 @@
 event_inherited();
 
 onCooldown = false;
-
+canMove = true;
 FireLightning = function()
 {
 	onCooldown = true;

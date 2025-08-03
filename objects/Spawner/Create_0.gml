@@ -62,3 +62,19 @@ SkipWave = function()
 		global.gameState.Victory();
 	}
 }
+
+SpawnEnemy = function(entry)
+{
+		// Read our spawnPoint from the list
+		var spawnPoint = spawnPoints[entry.spawnPointIndex];
+		var newlySpawnedEnemy = instance_create_layer(spawnPoint.x, spawnPoint.y, "Enemies", EnemySpawner);
+		entry.spawned = true;
+			
+		// Register a function to our delegate! When our enemy dies, it will call this function below,
+		// and increase our currentEnemyKillCount by 1
+		// newlySpawnedEnemy.onDeath.Register(id, function() { ++currentEnemyKillCount; });
+		newlySpawnedEnemy.optionalDirection = entry.walkDirection;
+		newlySpawnedEnemy.spawnedEnemyId = entry.type;
+		newlySpawnedEnemy.callback = function() { ++currentEnemyKillCount; };
+		newlySpawnedEnemy.callbackOwner = id;
+}

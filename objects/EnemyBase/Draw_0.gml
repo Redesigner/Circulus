@@ -1,4 +1,14 @@
-draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, direction, image_blend, image_alpha);
+if (isStunned)
+{
+	var alpha = 1 - stunTimer.ElapsedTimePercent();
+	alpha *= alpha * alpha;
+	alpha *= 2;
+	draw_sprite_ext(sprite_index, image_index, x + sin((global.gameState.time + x) * 40) * alpha, y + sin((global.gameState.time + x) * 50) * alpha, image_xscale, image_yscale, direction, image_blend, image_alpha);
+}
+else
+{
+	draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, direction, image_blend, image_alpha);
+}
 
 if (global.drawDebug)
 {

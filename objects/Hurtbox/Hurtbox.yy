@@ -35,9 +35,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sp_Rect",
-    "path":"sprites/Sp_Rect/Sp_Rect.yy",
+    "name":"Sp_BulletHurtbox",
+    "path":"sprites/Sp_BulletHurtbox/Sp_BulletHurtbox.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sp_HealthbarBorder",
-    "path":"sprites/Sp_HealthbarBorder/Sp_HealthbarBorder.yy",
+    "name":"Sp_ManaBarFill",
+    "path":"sprites/Sp_ManaBarFill/Sp_ManaBarFill.yy",
   },
   "spriteMaskId":null,
   "visible":true,

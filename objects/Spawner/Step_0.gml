@@ -21,18 +21,7 @@ array_foreach(waves[currentWave], function(entry, index)
 			// Only 'Trigger' our wave once we've spawned the first enemy
 			triggered = true;
 			
-			// Read our spawnPoint from the list
-			var spawnPoint = spawnPoints[entry.spawnPointIndex];
-			var newlySpawnedEnemy = instance_create_layer(spawnPoint.x, spawnPoint.y, "Enemies", entry.type);
-			entry.spawned = true;
-			
-			// Register a function to our delegate! When our enemy dies, it will call this function below,
-			// and increase our currentEnemyKillCount by 1
-			newlySpawnedEnemy.onDeath.Register(id, function() { ++currentEnemyKillCount; });
-			if (entry.walkDirection != 0)
-			{
-				newlySpawnedEnemy.walkDirection = entry.walkDirection;
-			}
+			SpawnEnemy(entry);
 		}
 	});
 	

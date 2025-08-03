@@ -1,5 +1,4 @@
-if (global.paused)
+if (instance_exists(drawingController))
 {
-	return;	
+	percentage = (drawingController.inkMax - drawingController.currentDrawValue) / drawingController.inkMax;
 }
-percentage = (drawingController.inkMax - drawingController.currentDrawValue) / drawingController.inkMax;

@@ -13,3 +13,5 @@ spawner.AddSpawnerEntry(1, TestEnemy, 0, 30);
 spawner.AddSpawnerEntry(1, TestEnemy, 0, 40);
 spawner.AddSpawnerEntry(1, TestEnemy, 0, 50);
 spawner.AddSpawnerEntry(1, TestEnemy, 0, 60);
+
+layer_set_visible("Hud", true);
