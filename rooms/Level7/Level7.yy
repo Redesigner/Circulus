@@ -20,6 +20,8 @@
     {"name":"inst_6B7782C0","path":"rooms/Level7/Level7.yy",},
     {"name":"inst_28C5936E","path":"rooms/Level7/Level7.yy",},
     {"name":"inst_EF7BA6","path":"rooms/Level7/Level7.yy",},
+    {"name":"inst_71480A6F","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_167CB1EE","path":"roomui/RoomUI/RoomUI.yy",},
   ],
   "isDnd":false,
   "layers":[
