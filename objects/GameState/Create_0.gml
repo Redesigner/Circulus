@@ -34,7 +34,7 @@ Victory = function()
 {
 	global.paused = true;
 	playerCanUnpause = false;
-	
+	audio_play_sound(Sfx_Victory, 2, false);
 	// Play victory sequence
 	call_later(1.0, time_source_units_seconds, function()
 	{

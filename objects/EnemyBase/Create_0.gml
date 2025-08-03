@@ -57,7 +57,7 @@ Stun = function(duration)
 }
 
 Circle = function()
-{
+{	
 	TakeDamage(1.0);
 }
 
@@ -95,7 +95,7 @@ FireBullet = function()
 {
 	var targetPosition = GetPositionVector(target);
 	var newBullet = instance_create_layer(targetPosition.x, targetPosition.y, "Projectiles", projectileAsset);
-	
+	audio_play_sound(Sfx_Fire, 2, false);
 	if (object_is_ancestor(projectileAsset, Bullet) || projectileAsset == Bullet)
 	{
 		newBullet.origin.x = x;

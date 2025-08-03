@@ -1,8 +1,18 @@
 {
   "FolderOrderSettings":[
+    {"name":"Sounds","order":1,"path":"folders/Characters/Enemies/Sounds.yy",},
+    {"name":"Music","order":1,"path":"folders/Music.yy",},
     {"name":"Cursor","order":1,"path":"folders/Ui/Cursor.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"Sfx_Death","order":4,"path":"sounds/Sfx_Death/Sfx_Death.yy",},
+    {"name":"Sfx_Fire","order":2,"path":"sounds/Sfx_Fire/Sfx_Fire.yy",},
+    {"name":"Sfx_Heal","order":8,"path":"sounds/Sfx_Heal/Sfx_Heal.yy",},
+    {"name":"Sfx_Hit","order":7,"path":"sounds/Sfx_Hit/Sfx_Hit.yy",},
+    {"name":"Sfx_Land","order":6,"path":"sounds/Sfx_Land/Sfx_Land.yy",},
+    {"name":"Sfx_Stomp","order":3,"path":"sounds/Sfx_Stomp/Sfx_Stomp.yy",},
+    {"name":"Sfx_Stun","order":1,"path":"sounds/Sfx_Stun/Sfx_Stun.yy",},
+    {"name":"Sfx_Victory","order":5,"path":"sounds/Sfx_Victory/Sfx_Victory.yy",},
     {"name":"Sp_Logo","order":1,"path":"sprites/Sp_Logo/Sp_Logo.yy",},
   ],
 }

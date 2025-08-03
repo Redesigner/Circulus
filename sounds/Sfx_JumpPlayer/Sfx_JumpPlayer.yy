@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.31,
+  "duration":0.09399093,
   "name":"Sfx_JumpPlayer",
   "parent":{
     "name":"Sounds",

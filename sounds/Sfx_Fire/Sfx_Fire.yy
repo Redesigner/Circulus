@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"Sfx_Fire",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.5555329,
+  "name":"Sfx_Fire",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Characters/Enemies/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Sfx_Fire.wav",
+  "type":0,
+  "volume":1.0,
+}
