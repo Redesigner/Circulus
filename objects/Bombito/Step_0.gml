@@ -12,6 +12,7 @@ if (!active)
 	if (GetPositionVector(id).DistanceSquared(GetPositionVector(target)) < explosionDistance * explosionDistance)
 	{
 		active = true;
+		image_index = Sp_BombitoExplode;
 		timer = global.gameState.timerManager.Add(5, Explode, id);
 	}
 }

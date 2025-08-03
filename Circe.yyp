@@ -197,6 +197,8 @@
     {"id":{"name":"Sp_ArmoredEnemyPh","path":"sprites/Sp_ArmoredEnemyPh/Sp_ArmoredEnemyPh.yy",},},
     {"id":{"name":"Sp_ArmoredEyer","path":"sprites/Sp_ArmoredEyer/Sp_ArmoredEyer.yy",},},
     {"id":{"name":"Sp_Bombito","path":"sprites/Sp_Bombito/Sp_Bombito.yy",},},
+    {"id":{"name":"Sp_BombitoExplode","path":"sprites/Sp_BombitoExplode/Sp_BombitoExplode.yy",},},
+    {"id":{"name":"Sp_BombitoFall","path":"sprites/Sp_BombitoFall/Sp_BombitoFall.yy",},},
     {"id":{"name":"Sp_Buildings","path":"sprites/Sp_Buildings/Sp_Buildings.yy",},},
     {"id":{"name":"Sp_Bullet","path":"sprites/Sp_Bullet/Sp_Bullet.yy",},},
     {"id":{"name":"Sp_BulletHurtbox","path":"sprites/Sp_BulletHurtbox/Sp_BulletHurtbox.yy",},},
