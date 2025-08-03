@@ -76,8 +76,8 @@
     {"$GMFolder":"","%Name":"Sequences","folderPath":"folders/Sequences.yy","name":"Sequences","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Ui","folderPath":"folders/Ui.yy","name":"Ui","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Button","folderPath":"folders/Ui/Button.yy","name":"Button","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"StartButton","folderPath":"folders/Ui/StartButton.yy","name":"StartButton","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Healthbar","folderPath":"folders/Ui/Healthbar.yy","name":"Healthbar","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"StartButton","folderPath":"folders/Ui/StartButton.yy","name":"StartButton","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"WaveIndicator","folderPath":"folders/Ui/WaveIndicator.yy","name":"WaveIndicator","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[],
@@ -154,7 +154,6 @@
     {"id":{"name":"Level8","path":"rooms/Level8/Level8.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"StartMenu","path":"rooms/StartMenu/StartMenu.yy",},},
-    {"id":{"name":"TestLevel","path":"rooms/TestLevel/TestLevel.yy",},},
     {"id":{"name":"Tutorial","path":"rooms/Tutorial/Tutorial.yy",},},
     {"id":{"name":"TutorialControls","path":"rooms/TutorialControls/TutorialControls.yy",},},
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
@@ -260,7 +259,6 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"StartMenu","path":"rooms/StartMenu/StartMenu.yy",},},
-    {"roomId":{"name":"TestLevel","path":"rooms/TestLevel/TestLevel.yy",},},
     {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
     {"roomId":{"name":"Level2","path":"rooms/Level2/Level2.yy",},},
     {"roomId":{"name":"Level3","path":"rooms/Level3/Level3.yy",},},
@@ -275,7 +273,6 @@
     {"roomId":{"name":"Level3_old","path":"rooms/Level3_old/Level3_old.yy",},},
     {"roomId":{"name":"Level2_old","path":"rooms/Level2_old/Level2_old.yy",},},
     {"roomId":{"name":"Level1_old","path":"rooms/Level1_old/Level1_old.yy",},},
-    {"roomId":{"name":"TestLevel","path":"rooms/TestLevel/TestLevel.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

@@ -9,7 +9,7 @@ Circle = function()
 {
 	TakeDamage(10);
 	layer_sequence_create(layer, 0, 0, Sq_Murderer);
-	call_later(3.0, time_source_units_seconds, function() { room_goto(TestLevel); });
+	call_later(3.0, time_source_units_seconds, function() { room_goto(Level1); });
 };
 Slash = function() { };
 Tap = function() { };
