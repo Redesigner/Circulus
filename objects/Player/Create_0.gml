@@ -20,6 +20,7 @@ key_pressed_left = keyboard_check_pressed(ord("A"));
 key_pressed_right = keyboard_check_pressed(ord("D"));
 dead = false;
 playingSequence = 0;
+startingPosition = GetPositionVector(id);
 
 playerDrawingSprite = instance_create_depth(x, y, depth + 1, PlayerDrawing);
 // collisionLayer = [ layer_tilemap_get_id("Floor"), SwordHurtbox ];
@@ -165,6 +166,15 @@ Die = function()
 			layer_sequence_destroy(playingSequence);
 			global.gameState.GameOver();
 		}, id);
+}
+
+Fall = function()
+{
+	TakeDamage(1.0);
+	x = startingPosition.x;
+	y = 0;
+	velocity.y = 0;
+	velocity.x = 0;
 }
 
 Heal = function(value)
