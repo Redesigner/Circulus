@@ -5,6 +5,8 @@ if (global.drawDebug)
 	draw_set_color(c_white);
 	draw_text_ext_transformed(x - 4, bbox_top - 12, $"HP: {hitPoints}", -1, 200, 0.2, 0.2, 0);
 	
+	draw_text_ext_transformed(x, bbox_top - 24, sprite_index, -1, 200, 0.5, 0.5, 0);
+		
 	draw_set_color(c_red);
 	var percentage = (fireTimerCurrent / fireTimer);
 	if (percentage > 0.125)

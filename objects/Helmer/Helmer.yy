@@ -39,6 +39,9 @@
     "name":"Sp_HelmerWalk",
     "path":"sprites/Sp_HelmerWalk/Sp_HelmerWalk.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"Sp_HelmerWalk",
+    "path":"sprites/Sp_HelmerWalk/Sp_HelmerWalk.yy",
+  },
   "visible":true,
 }

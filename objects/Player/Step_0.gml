@@ -89,6 +89,7 @@ if (velocity.y < 0 && !grounded)
 		{
 			enemy.Stomp();
 			velocity.y = jumpStrength;
+			canDoubleJump = true;
 		}
 	}
 }
@@ -98,28 +99,38 @@ else if (grounded)
 	enemiesHit = Sweep(delta, Goomba);
 }
 
-event_inherited()
-
-var numEnemiesHit = ds_list_size(enemiesHit);
-
 if (sweepingEnemies)
 {
+	var numEnemiesHit = ds_list_size(enemiesHit);
 	for (var i = 0; i < numEnemiesHit; ++i)
 	{
 		var enemy = ds_list_find_value(enemiesHit, i);
 		
 		if (velocity.x > 0)
 		{
-			// enemy.x += bbox_right - enemy.bbox_left;
-			enemy.Push(new Vector2(bbox_right - enemy.bbox_left, 0), Goomba);
+			if (x < enemy.x)
+			{
+				// enemy.x += bbox_right - enemy.bbox_left;
+				enemy.Push(new Vector2(bbox_right + velocity.x * DeltaTimeSeconds() - enemy.bbox_left, 0), Goomba);
+			}
 		}
 		else
 		{
-			// enemy.x += bbox_left - enemy.bbox_right;
-			enemy.Push(new Vector2(bbox_left - enemy.bbox_right, 0), Goomba);
+			if (x > enemy.x)
+			{
+				// enemy.x += bbox_left - enemy.bbox_right;
+				enemy.Push(new Vector2(bbox_left + velocity.x * DeltaTimeSeconds() - enemy.bbox_right, 0), Goomba);
+			}
 		}
 	}
 }
 
-playerDrawingSprite.x = x;
-playerDrawingSprite.y = y;
+event_inherited()
+
+
+
+if (!dead)
+{
+	playerDrawingSprite.x = x;
+	playerDrawingSprite.y = y;
+}

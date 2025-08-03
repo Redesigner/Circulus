@@ -30,4 +30,13 @@ GameOver = function()
 	instance_create_layer(camera_get_view_width(view_camera[0]) / 2, camera_get_view_height(view_camera[0]) / 2, layer, RestartButton);
 }
 
+Victory = function()
+{
+	global.paused = true;
+	playerCanUnpause = false;
+	
+	// Play victory sequence
+	call_later(3.0, time_source_units_seconds, function() { room_goto_next(); });
+}
+
 // RoomStart();

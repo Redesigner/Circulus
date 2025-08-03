@@ -10,6 +10,7 @@ timer+= DeltaTimeSeconds();
 if (currentWave > totalWaves)
 {
 	instance_destroy();
+	global.gameState.Victory();
 }
 
 // Iterate through each entry in our waves list
@@ -41,9 +42,7 @@ if (currentEnemyKillCount == array_length(waves[currentWave]) && triggered)
 	if (currentWave == totalWaves)
 	{
 		instance_destroy();
-		//
-		//Victory Screen and Level Transition
-		//
+		global.gameState.Victory();
 	}
 	else
 	{

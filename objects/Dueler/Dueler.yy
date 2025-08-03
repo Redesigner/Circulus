@@ -38,6 +38,9 @@
     "name":"Sp_DulerWalk",
     "path":"sprites/Sp_DulerWalk/Sp_DulerWalk.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"Sp_DulerWalk",
+    "path":"sprites/Sp_DulerWalk/Sp_DulerWalk.yy",
+  },
   "visible":true,
 }
