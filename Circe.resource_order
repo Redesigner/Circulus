@@ -88,6 +88,7 @@
     {"name":"Timer","order":8,"path":"scripts/Timer/Timer.yy",},
     {"name":"Sq_Start","order":1,"path":"sequences/Sq_Start/Sq_Start.yy",},
     {"name":"Sp_ArmoredEnemyPh_Stunned","order":1,"path":"sprites/Sp_ArmoredEnemyPh_Stunned/Sp_ArmoredEnemyPh_Stunned.yy",},
+    {"name":"Sp_CloudIdle","order":1,"path":"sprites/Sp_CloudIdle/Sp_CloudIdle.yy",},
     {"name":"Sp_Countdown","order":2,"path":"sprites/Sp_Countdown/Sp_Countdown.yy",},
     {"name":"Sp_Drawing","order":9,"path":"sprites/Sp_Drawing/Sp_Drawing.yy",},
     {"name":"Sp_DulerDie","order":2,"path":"sprites/Sp_DulerDie/Sp_DulerDie.yy",},

@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"CloudEnemy",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":72,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"CloudEnemy",
   "overriddenProperties":[
@@ -33,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sp_CloudPlaceholder",
-    "path":"sprites/Sp_CloudPlaceholder/Sp_CloudPlaceholder.yy",
+    "name":"Sp_CloudIdle",
+    "path":"sprites/Sp_CloudIdle/Sp_CloudIdle.yy",
   },
   "spriteMaskId":null,
   "visible":true,
