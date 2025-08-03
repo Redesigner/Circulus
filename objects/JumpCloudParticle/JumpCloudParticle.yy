@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"CloudParticle",
+  "%Name":"JumpCloudParticle",
   "eventList":[],
   "managed":true,
-  "name":"CloudParticle",
+  "name":"JumpCloudParticle",
   "overriddenProperties":[],
   "parent":{
-    "name":"Cloud",
-    "path":"folders/Particles/Cloud.yy",
+    "name":"JumpCloud",
+    "path":"folders/Particles/JumpCloud.yy",
   },
   "parentObjectId":{
     "name":"ParticleObject",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sp_CloudParticle",
-    "path":"sprites/Sp_CloudParticle/Sp_CloudParticle.yy",
+    "name":"Sp_JumpCloud",
+    "path":"sprites/Sp_JumpCloud/Sp_JumpCloud.yy",
   },
   "spriteMaskId":null,
   "visible":true,

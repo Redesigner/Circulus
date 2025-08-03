@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"CloudParticle",
+  "%Name":"DashCloudParticle",
   "eventList":[],
   "managed":true,
-  "name":"CloudParticle",
+  "name":"DashCloudParticle",
   "overriddenProperties":[],
   "parent":{
-    "name":"Cloud",
-    "path":"folders/Particles/Cloud.yy",
+    "name":"DashCloud",
+    "path":"folders/Particles/DashCloud.yy",
   },
   "parentObjectId":{
     "name":"ParticleObject",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sp_CloudParticle",
-    "path":"sprites/Sp_CloudParticle/Sp_CloudParticle.yy",
+    "name":"Sp_DashCloud",
+    "path":"sprites/Sp_DashCloud/Sp_DashCloud.yy",
   },
   "spriteMaskId":null,
   "visible":true,
