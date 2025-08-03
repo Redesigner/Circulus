@@ -40,6 +40,7 @@ TakeDamage = function(damage)
 
 Stun = function(duration)
 {
+	SpawnHere(CloudParticle);
 	if (isStunned)
 	{
 		stunTimer.Reset();
@@ -86,6 +87,7 @@ Die = function()
 	{
 		instance_create_layer(x, (bbox_top + bbox_bottom) / 2, "Enemies", HealthPickup);
 	}
+	SpawnHere(CloudParticle);
 	onDeath.Invoke();
 }
 
