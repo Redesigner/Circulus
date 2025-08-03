@@ -6,10 +6,10 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
+    {"name":"inst_71CF9B82","path":"rooms/StartMenu/StartMenu.yy",},
     {"name":"inst_71480A6F","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_167CB1EE","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_E1C41F6","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_71CF9B82","path":"rooms/StartMenu/StartMenu.yy",},
   ],
   "isDnd":false,
   "layers":[
