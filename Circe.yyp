@@ -131,6 +131,7 @@
     {"id":{"name":"Level5","path":"rooms/Level5/Level5.yy",},},
     {"id":{"name":"Level6","path":"rooms/Level6/Level6.yy",},},
     {"id":{"name":"Level7","path":"rooms/Level7/Level7.yy",},},
+    {"id":{"name":"Level8","path":"rooms/Level8/Level8.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"TestLevel","path":"rooms/TestLevel/TestLevel.yy",},},
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
@@ -207,6 +208,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"Level8","path":"rooms/Level8/Level8.yy",},},
     {"roomId":{"name":"Level7","path":"rooms/Level7/Level7.yy",},},
     {"roomId":{"name":"Level5","path":"rooms/Level5/Level5.yy",},},
     {"roomId":{"name":"Level2","path":"rooms/Level2/Level2.yy",},},
