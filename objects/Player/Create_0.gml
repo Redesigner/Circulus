@@ -47,6 +47,7 @@ Jump = function()
 	Invincibility(0.2);
 	grounded = false;
 	PlayAnimationOnce(Sp_PlayerJump, false);
+	audio_play_sound(Sfx_JumpPlayer, 1, false);
 	SpawnHere(JumpCloudParticle);
 }
 
@@ -61,6 +62,7 @@ DoubleJump = function()
 	velocity.y = jumpStrength;
 	canDoubleJump = false;
 	PlayAnimationOnce(Sp_PlayerJump, false);
+	audio_play_sound(Sfx_JumpPlayer, 1, false);
 	SpawnHere(JumpCloudParticle);
 }
 
@@ -92,6 +94,7 @@ Dodge = function()
 	var dashCloud = SpawnHere(DashCloudParticle);
 	dashCloud.image_xscale = image_xscale;
 	var inputAxis = InputAxis(ord("D"), ord("A"));
+	audio_play_sound(Sfx_Dash, 2, false);
 	isDodging = true;
 	velocity.x = dodgeSpeed * inputAxis;
 	Invincibility(dodgeLength);

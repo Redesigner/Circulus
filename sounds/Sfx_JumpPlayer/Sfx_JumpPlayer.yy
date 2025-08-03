@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"Sfx_JumpPlayer",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.31,
+  "name":"Sfx_JumpPlayer",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Characters/Player/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Sfx_JumpPlayer.wav",
+  "type":0,
+  "volume":1.0,
+}
