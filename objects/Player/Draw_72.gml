@@ -12,4 +12,7 @@ if (grounded && !playingOneShot)
 	}
 }
 
-playerDrawingSprite.image_xscale = image_xscale;
+if (!dead)
+{
+	playerDrawingSprite.image_xscale = image_xscale;
+}
