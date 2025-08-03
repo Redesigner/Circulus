@@ -19,6 +19,7 @@
     {"name":"inst_D82D5CB","path":"rooms/TestLevel/TestLevel.yy",},
     {"name":"inst_5E9436B0","path":"rooms/TestLevel/TestLevel.yy",},
     {"name":"inst_440A8332","path":"rooms/TestLevel/TestLevel.yy",},
+    {"name":"inst_242FE7E9","path":"rooms/TestLevel/TestLevel.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -37,6 +38,7 @@
         {"$GMRInstance":"v2","%Name":"inst_D82D5CB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_D82D5CB","objectId":{"name":"Helmer","path":"objects/Helmer/Helmer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":224.0,},
         {"$GMRInstance":"v2","%Name":"inst_5E9436B0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":true,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5E9436B0","objectId":{"name":"Dueler","path":"objects/Dueler/Dueler.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":336.0,"y":224.0,},
         {"$GMRInstance":"v2","%Name":"inst_440A8332","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_440A8332","objectId":{"name":"Popper","path":"objects/Popper/Popper.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":368.0,"y":96.0,},
+        {"$GMRInstance":"v2","%Name":"inst_242FE7E9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_242FE7E9","objectId":{"name":"Eyer","path":"objects/Eyer/Eyer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":208.0,"y":112.0,},
       ],"layers":[],"name":"Enemies","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Floor","depth":400,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Floor","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":17,"SerialiseWidth":60,"TileCompressedData":[
           -2,0,-58,-2147483648,-2,0,-58,-2147483648,1,0,-59,-2147483648,1,0,-59,-2147483648,1,0,-59,-2147483648,
