@@ -99,8 +99,11 @@ Push = function(delta, target, stackDepth = 0)
 		return;
 	}
 	
-	x += delta.x;
-	y += delta.y;
+	move_and_collide(delta.x + sign(delta.x) * 0.2, 0, collisionLayer);
+	
+	// x += delta.x;
+	// y += delta.y;
+	/*
 	var enemiesHit = Sweep(delta, target)
 	var numEnemies = ds_list_size(enemiesHit);
 	
@@ -117,5 +120,5 @@ Push = function(delta, target, stackDepth = 0)
 			// enemy.x += bbox_left - enemy.bbox_right;
 			enemy.Push(new Vector2(bbox_left - enemy.bbox_right, 0), Goomba, stackDepth + 1);
 		}
-	}
+	}*/
 }
