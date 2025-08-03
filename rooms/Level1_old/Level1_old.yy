@@ -42,8 +42,8 @@
   ],
   "name":"Level1_old",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Scrapped",
+    "path":"folders/Rooms/Scrapped.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

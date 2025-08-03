@@ -10,8 +10,9 @@ var bg_lowerLeft = spawner.AddSpawnPoint(63, 78);
 var bg_lowerRight = spawner.AddSpawnPoint(450, 130);
 
 //Foreground Spawnpoints
-var fg_left = spawner.AddSpawnPoint(64, 220);
-var fg_right = spawner.AddSpawnPoint(390, 220); 
+var fg_left = spawner.AddSpawnPoint(30, 205);
+var fg_right = spawner.AddSpawnPoint(450, 190); 
+
 
 //Wave 1
 spawner.AddSpawnerEntry(0, TestEnemy, bg_right, 2);
@@ -54,20 +55,9 @@ spawner.AddSpawnerEntry(5, TestEnemy, bg_lowerRight, 2)
 
 spawner.AddSpawnerEntry(5, Swordsmin, fg_left, 4, 1);
 
-spawner.AddSpawnerEntry(5, ArmoredEnemy, bg_up, 8);
-spawner.AddSpawnerEntry(5, ArmoredEnemy, bg_down, 8);
-spawner.AddSpawnerEntry(5, TestEnemy, bg_middle, 8);
-spawner.AddSpawnerEntry(5, TestEnemy, bg_middle, 9);
+spawner.AddSpawnerEntry(5, ArmoredEnemy, bg_left, 8);
+spawner.AddSpawnerEntry(5, ArmoredEnemy, bg_right, 8);
+spawner.AddSpawnerEntry(5, TestEnemy, bg_lowerLeft, 8);
+spawner.AddSpawnerEntry(5, TestEnemy, bg_lowerRight, 8);
 
-spawner.AddSpawnerEntry(5, Helmer, fg_right, 8, -1);
-
-//Wave 7
-spawner.AddSpawnerEntry(6, ArmoredEnemy, bg_up, 1);
-spawner.AddSpawnerEntry(6, ArmoredEnemy, bg_down, 2);
-spawner.AddSpawnerEntry(6, ArmoredEnemy, bg_middle, 3);
-spawner.AddSpawnerEntry(6, TestEnemy, bg_lowerRight, 4, -1);
-spawner.AddSpawnerEntry(6, TestEnemy, bg_lowerRight, 5, -1);
-spawner.AddSpawnerEntry(6, TestEnemy, bg_lowerLeft, 4, -1);
-spawner.AddSpawnerEntry(6, TestEnemy, bg_lowerLeft, 5, -1);
-
-spawner.AddSpawnerEntry(6, Bombito, fg_right, 8, -1);
+spawner.AddSpawnerEntry(5, Swordsmin, fg_right, 4, -1);
