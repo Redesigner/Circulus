@@ -177,6 +177,8 @@
     {"id":{"name":"Sp_PlayerSlide2","path":"sprites/Sp_PlayerSlide2/Sp_PlayerSlide2.yy",},},
     {"id":{"name":"Sp_PlayerWalk","path":"sprites/Sp_PlayerWalk/Sp_PlayerWalk.yy",},},
     {"id":{"name":"Sp_Popper","path":"sprites/Sp_Popper/Sp_Popper.yy",},},
+    {"id":{"name":"Sp_PopperAttacking","path":"sprites/Sp_PopperAttacking/Sp_PopperAttacking.yy",},},
+    {"id":{"name":"Sp_PopperDie","path":"sprites/Sp_PopperDie/Sp_PopperDie.yy",},},
     {"id":{"name":"Sp_Rect","path":"sprites/Sp_Rect/Sp_Rect.yy",},},
     {"id":{"name":"Sp_Rect16","path":"sprites/Sp_Rect16/Sp_Rect16.yy",},},
     {"id":{"name":"Sp_RestartButton","path":"sprites/Sp_RestartButton/Sp_RestartButton.yy",},},

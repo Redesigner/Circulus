@@ -109,6 +109,8 @@
     {"name":"Sp_PlayerJump","order":7,"path":"sprites/Sp_PlayerJump/Sp_PlayerJump.yy",},
     {"name":"Sp_PlayerSlide2","order":8,"path":"sprites/Sp_PlayerSlide2/Sp_PlayerSlide2.yy",},
     {"name":"Sp_PlayerWalk","order":1,"path":"sprites/Sp_PlayerWalk/Sp_PlayerWalk.yy",},
+    {"name":"Sp_PopperAttacking","order":1,"path":"sprites/Sp_PopperAttacking/Sp_PopperAttacking.yy",},
+    {"name":"Sp_PopperDie","order":2,"path":"sprites/Sp_PopperDie/Sp_PopperDie.yy",},
     {"name":"Sp_Rect","order":2,"path":"sprites/Sp_Rect/Sp_Rect.yy",},
     {"name":"Sp_Rect16","order":2,"path":"sprites/Sp_Rect16/Sp_Rect16.yy",},
     {"name":"Sp_Reticle","order":1,"path":"sprites/Sp_Reticle/Sp_Reticle.yy",},

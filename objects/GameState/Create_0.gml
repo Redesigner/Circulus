@@ -36,7 +36,8 @@ Victory = function()
 	playerCanUnpause = false;
 	
 	// Play victory sequence
+	layer_sequence_create(layer, 160, 90, Sq_Start);
 	call_later(3.0, time_source_units_seconds, function() { room_goto_next(); });
 }
 
-// RoomStart();
+RoomStart();

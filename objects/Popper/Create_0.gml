@@ -8,3 +8,5 @@ movementType = MovementType.Sine;
 Circle = function() { TakeDamage(10); };
 Slash = function() { TakeDamage(10); };
 Tap = function() { TakeDamage(10); };
+
+onDeath.Register(id, function(){ PlayAnimationOnce(Sp_PopperDie, false); });
