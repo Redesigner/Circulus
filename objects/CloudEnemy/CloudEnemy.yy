@@ -39,6 +39,9 @@
     "name":"Sp_CloudIdle",
     "path":"sprites/Sp_CloudIdle/Sp_CloudIdle.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"Sp_CloudIdle",
+    "path":"sprites/Sp_CloudIdle/Sp_CloudIdle.yy",
+  },
   "visible":true,
 }
