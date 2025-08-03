@@ -164,4 +164,6 @@
     {"name":"Sp_TestEnemyStunned","order":1,"path":"sprites/Sp_TestEnemyStunned/Sp_TestEnemyStunned.yy",},
     {"name":"Sp_WaveIndicator","order":1,"path":"sprites/Sp_WaveIndicator/Sp_WaveIndicator.yy",},
   ],
+  "FolderOrderSettings":[],
+  "ResourceOrderSettings":[],
 }
