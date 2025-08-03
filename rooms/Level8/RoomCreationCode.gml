@@ -32,15 +32,15 @@ spawner.AddSpawnerEntry(0, Popper, bg_left, 10);
 spawner.AddSpawnerEntry(0, Popper, bg_right, 10);
 
 spawner.AddSpawnerEntry(0, Popper, bg_rightLeft, 15);
-spawner.AddSpawnerEntry(0, ArmoredEnemy, bg_left, 15);
-spawner.AddSpawnerEntry(0, ArmoredEnemy, bg_right, 15);
+spawner.AddSpawnerEntry(0, Eyer, bg_left, 15);
+spawner.AddSpawnerEntry(0, Eyer, bg_right, 15);
 spawner.AddSpawnerEntry(0, Popper, bg_leftRight, 15);
 
 spawner.AddSpawnerEntry(0, Popper, bg_rightRight, 20);
-spawner.AddSpawnerEntry(0, ArmoredEnemy, bg_leftUp, 20);
-spawner.AddSpawnerEntry(0, ArmoredEnemy, bg_rightDown, 20);
+spawner.AddSpawnerEntry(0, Eyer, bg_leftUp, 20);
+spawner.AddSpawnerEntry(0, Eyer, bg_rightDown, 20);
 spawner.AddSpawnerEntry(0, Popper, bg_leftLeft, 20);
-spawner.AddSpawnerEntry(0, ArmoredEnemy, bg_up, 20);
+spawner.AddSpawnerEntry(0, Eyer, bg_up, 20);
 spawner.AddSpawnerEntry(0, Popper, bg_down, 20);
 
 spawner.AddSpawnerEntry(0, Popper, bg_leftLeft, 40);

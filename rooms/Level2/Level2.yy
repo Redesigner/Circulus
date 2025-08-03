@@ -22,7 +22,7 @@
         {"$GMRInstance":"v2","%Name":"inst_147CB70E_1_1_2_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_147CB70E_1_1_2_1","objectId":{"name":"GameState","path":"objects/GameState/GameState.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":0.0,},
       ],"layers":[],"name":"Game","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Player","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v2","%Name":"inst_4B4E370B_1_1_2_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4B4E370B_1_1_2_1","objectId":{"name":"Player","path":"objects/Player/Player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":256.0,"y":192.0,},
+        {"$GMRInstance":"v2","%Name":"inst_4B4E370B_1_1_2_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4B4E370B_1_1_2_1","objectId":{"name":"Player","path":"objects/Player/Player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":256.0,"y":196.0,},
       ],"layers":[],"name":"Player","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Projectiles","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Projectiles","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Enemies","depth":300,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
@@ -33,10 +33,10 @@
         {"$GMRInstance":"v2","%Name":"inst_4C6A6C86_1_1_2_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4C6A6C86_1_1_2_1","objectId":{"name":"TurnAroundHitbox","path":"objects/TurnAroundHitbox/TurnAroundHitbox.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.0,"scaleY":3.0,"x":80.0,"y":224.0,},
         {"$GMRInstance":"v2","%Name":"inst_69A0CDB3_1_1_2_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_69A0CDB3_1_1_2_1","objectId":{"name":"TurnAroundHitbox","path":"objects/TurnAroundHitbox/TurnAroundHitbox.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.0,"scaleY":3.0,"x":416.0,"y":224.0,},
       ],"layers":[],"name":"Enemies","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRTileLayer":"","%Name":"Floor","depth":400,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Floor","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":17,"SerialiseWidth":60,"TileCompressedData":[
-          -2,0,-58,-2147483648,-2,0,-58,-2147483648,1,0,-59,-2147483648,1,0,-59,-2147483648,1,0,-59,-2147483648,
-          1,0,-59,-2147483648,1,0,-59,-2147483648,1,0,-59,-2147483648,5,0,-2147483648,-2147483648,0,0,-55,-2147483648,
-          -26,0,-279,-2147483648,-21,1,-39,-2147483648,-21,1,-39,-2147483648,-21,1,-34,-2147483648,
+    {"$GMRTileLayer":"","%Name":"Floor","depth":400,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Floor","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
+          -2,0,-28,-2147483648,-2,0,-28,-2147483648,1,0,-29,-2147483648,1,0,-29,-2147483648,1,0,-29,-2147483648,
+          1,0,-29,-2147483648,1,0,-29,-2147483648,1,0,-29,-2147483648,5,0,-2147483648,-2147483648,0,0,-25,-2147483648,
+          -26,0,-129,-2147483648,-21,1,-9,-2147483648,-21,1,-9,-2147483648,-21,1,-4,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"Ts_Floors","path":"tilesets/Ts_Floors/Ts_Floors.yy",},"userdefinedDepth":false,"visible":false,"x":0,"y":0,},
     {"$GMRAssetLayer":"","%Name":"Foreground","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_7746DFCA_1_1","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_7746DFCA_1_1","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"Sp_Foreground","path":"sprites/Sp_Foreground/Sp_Foreground.yy",},"x":240.0,"y":270.0,},
@@ -68,7 +68,7 @@
     "Height":270,
     "inheritRoomSettings":false,
     "persistent":false,
-    "Width":960,
+    "Width":480,
   },
   "sequenceId":null,
   "views":[

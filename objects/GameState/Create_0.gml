@@ -27,7 +27,7 @@ GameOver = function()
 {
 	global.paused = true;
 	playerCanUnpause = false;
-	instance_create_layer(camera_get_view_width(view_camera[0]) / 2, camera_get_view_height(view_camera[0]) / 2, layer, RestartButton);
+	instance_create_layer(0, 0, layer, RestartButton);
 }
 
 Victory = function()
@@ -36,8 +36,21 @@ Victory = function()
 	playerCanUnpause = false;
 	
 	// Play victory sequence
-	layer_sequence_create(layer, 0, 0, Sq_Victory);
-	call_later(2.0, time_source_units_seconds, function() { room_goto_next(); });
+	call_later(1.0, time_source_units_seconds, function()
+	{
+		layer_sequence_create(layer, 0, 0, Sq_Victory);
+		call_later(3.0, time_source_units_seconds, function()
+			{
+				if (room == Level8)
+				{
+					// do victory thing
+				}
+				else
+				{
+					room_goto_next();
+				}
+			});
+	});
 }
 
 if (room != Tutorial && room != TutorialControls)

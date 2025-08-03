@@ -22,7 +22,7 @@ switch(movementType)
 	{
 		var alpha = localTime / movementPeriod * pi * 2;
 		var beta = localTime / movementPeriodB * pi * 2;
-		x = targetPosition.x + cos(alpha) * movementStrength;
+		x = targetPosition.x + sin(alpha) * movementStrength;
 		y = targetPosition.y + sin(beta) * movementStrengthB;
 		break;
 	}
