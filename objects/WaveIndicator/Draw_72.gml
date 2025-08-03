@@ -1,0 +1,1 @@
+image_index = instance_exists(spawner) ? spawner.currentWave : 7;

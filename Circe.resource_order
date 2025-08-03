@@ -54,6 +54,7 @@
     {"name":"Sequences","order":4,"path":"folders/Sequences.yy",},
     {"name":"Ui","order":5,"path":"folders/Ui.yy",},
     {"name":"Button","order":3,"path":"folders/Ui/Button.yy",},
+    {"name":"WaveIndicator","order":4,"path":"folders/Ui/WaveIndicator.yy",},
     {"name":"Healthbar","order":2,"path":"folders/Ui/Healthbar.yy",},
   ],
   "ResourceOrderSettings":[
@@ -116,6 +117,8 @@
     {"name":"Sp_Laser","order":2,"path":"sprites/Sp_Laser/Sp_Laser.yy",},
     {"name":"Sp_LevelCleared_Bottom","order":6,"path":"sprites/Sp_LevelCleared_Bottom/Sp_LevelCleared_Bottom.yy",},
     {"name":"Sp_LevelCleared_Top","order":5,"path":"sprites/Sp_LevelCleared_Top/Sp_LevelCleared_Top.yy",},
+    {"name":"Sp_ManaBar","order":5,"path":"sprites/Sp_ManaBar/Sp_ManaBar.yy",},
+    {"name":"Sp_ManaBarFill","order":6,"path":"sprites/Sp_ManaBarFill/Sp_ManaBarFill.yy",},
     {"name":"Sp_PlayerDamage","order":6,"path":"sprites/Sp_PlayerDamage/Sp_PlayerDamage.yy",},
     {"name":"Sp_PlayerDie","order":4,"path":"sprites/Sp_PlayerDie/Sp_PlayerDie.yy",},
     {"name":"Sp_PlayerDraw","order":5,"path":"sprites/Sp_PlayerDraw/Sp_PlayerDraw.yy",},
@@ -135,5 +138,6 @@
     {"name":"Sp_SwordsminWalk","order":1,"path":"sprites/Sp_SwordsminWalk/Sp_SwordsminWalk.yy",},
     {"name":"Sp_Test_inv","order":1,"path":"sprites/Sp_Test_inv/Sp_Test_inv.yy",},
     {"name":"Sp_TestEnemyStunned","order":1,"path":"sprites/Sp_TestEnemyStunned/Sp_TestEnemyStunned.yy",},
+    {"name":"Sp_WaveIndicator","order":1,"path":"sprites/Sp_WaveIndicator/Sp_WaveIndicator.yy",},
   ],
 }

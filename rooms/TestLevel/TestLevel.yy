@@ -11,8 +11,6 @@
     {"name":"inst_147CB70E_1_1","path":"rooms/TestLevel/TestLevel.yy",},
     {"name":"inst_4C6A6C86_1_1","path":"rooms/TestLevel/TestLevel.yy",},
     {"name":"inst_69A0CDB3_1_1","path":"rooms/TestLevel/TestLevel.yy",},
-    {"name":"inst_71480A6F","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_167CB1EE","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_479CF2A1","path":"rooms/TestLevel/TestLevel.yy",},
     {"name":"inst_18434F5E","path":"rooms/TestLevel/TestLevel.yy",},
     {"name":"inst_DF4FF41","path":"rooms/TestLevel/TestLevel.yy",},
@@ -21,6 +19,9 @@
     {"name":"inst_440A8332","path":"rooms/TestLevel/TestLevel.yy",},
     {"name":"inst_242FE7E9","path":"rooms/TestLevel/TestLevel.yy",},
     {"name":"inst_79A9AA3B","path":"rooms/TestLevel/TestLevel.yy",},
+    {"name":"inst_71480A6F","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_167CB1EE","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_E1C41F6","path":"roomui/RoomUI/RoomUI.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -42,11 +43,11 @@
         {"$GMRInstance":"v2","%Name":"inst_242FE7E9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":true,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_242FE7E9","objectId":{"name":"Eyer","path":"objects/Eyer/Eyer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":208.0,"y":112.0,},
         {"$GMRInstance":"v2","%Name":"inst_79A9AA3B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_79A9AA3B","objectId":{"name":"CloudEnemy","path":"objects/CloudEnemy/CloudEnemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":432.0,"y":48.0,},
       ],"layers":[],"name":"Enemies","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRTileLayer":"","%Name":"Floor","depth":400,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Floor","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":17,"SerialiseWidth":60,"TileCompressedData":[
-          -2,0,-58,-2147483648,-2,0,-58,-2147483648,1,0,-59,-2147483648,1,0,-59,-2147483648,1,0,-59,-2147483648,
-          1,0,-59,-2147483648,1,0,-59,-2147483648,1,0,-59,-2147483648,5,0,-2147483648,-2147483648,0,0,-55,-2147483648,
-          -26,0,-105,-2147483648,1,0,-57,-2147483648,-3,0,-57,-2147483648,-3,0,-53,-2147483648,-20,1,1,0,-39,-2147483648,
-          -20,1,-3,0,-37,-2147483648,-20,1,1,0,-34,-2147483648,
+    {"$GMRTileLayer":"","%Name":"Floor","depth":400,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Floor","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
+          -2,0,-28,-2147483648,-2,0,-28,-2147483648,1,0,-29,-2147483648,1,0,-29,-2147483648,1,0,-29,-2147483648,
+          1,0,-29,-2147483648,1,0,-29,-2147483648,1,0,-29,-2147483648,5,0,-2147483648,-2147483648,0,0,-25,-2147483648,
+          -26,0,-45,-2147483648,1,0,-27,-2147483648,-3,0,-27,-2147483648,-3,0,-23,-2147483648,-20,1,1,0,-9,-2147483648,
+          -20,1,-3,0,-7,-2147483648,-20,1,1,0,-4,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"Ts_Floors","path":"tilesets/Ts_Floors/Ts_Floors.yy",},"userdefinedDepth":false,"visible":false,"x":0,"y":0,},
     {"$GMRAssetLayer":"","%Name":"Foreground","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_6B8B0E9","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_6B8B0E9","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"Sp_Foreground","path":"sprites/Sp_Foreground/Sp_Foreground.yy",},"x":240.0,"y":270.0,},
@@ -78,7 +79,7 @@
     "Height":270,
     "inheritRoomSettings":false,
     "persistent":false,
-    "Width":960,
+    "Width":480,
   },
   "sequenceId":null,
   "views":[

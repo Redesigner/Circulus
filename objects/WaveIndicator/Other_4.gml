@@ -1,0 +1,1 @@
+spawner = instance_find(Spawner, 0);
