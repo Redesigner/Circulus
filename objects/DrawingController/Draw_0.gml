@@ -12,7 +12,7 @@ if (global.drawing && global.canDraw)
 	if (surface_exists(canvas))
 	{
 		surface_set_target(canvas);
-		draw_set_color(make_color_rgb(255, 0, 0));
+		draw_set_color(make_color_rgb(120, 205, 214));
 		DrawLine(mousePosition, previousMousePosition, 2);	
 		surface_reset_target();
 	}

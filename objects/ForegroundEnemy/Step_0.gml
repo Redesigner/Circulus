@@ -3,7 +3,7 @@ if (global.paused)
 	return;
 }
 
-if (onCooldown || isStunned)
+if (!canMove || isStunned)
 {
 	return;
 }

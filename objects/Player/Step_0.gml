@@ -1,4 +1,4 @@
-if (global.paused)
+if (global.paused || dead)
 {
 	return;
 }

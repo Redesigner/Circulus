@@ -47,6 +47,7 @@ Jump = function()
 	Invincibility(0.2);
 	grounded = false;
 	PlayAnimationOnce(Sp_PlayerJump, false);
+	SpawnHere(JumpCloudParticle);
 }
 
 DoubleJump = function()
@@ -60,6 +61,7 @@ DoubleJump = function()
 	velocity.y = jumpStrength;
 	canDoubleJump = false;
 	PlayAnimationOnce(Sp_PlayerJump, false);
+	SpawnHere(JumpCloudParticle);
 }
 
 LandOnGround = function()
@@ -87,6 +89,8 @@ Dodge = function()
 		return;
 	}
 	
+	var dashCloud = SpawnHere(DashCloudParticle);
+	dashCloud.image_xscale = image_xscale;
 	var inputAxis = InputAxis(ord("D"), ord("A"));
 	isDodging = true;
 	velocity.x = dodgeSpeed * inputAxis;

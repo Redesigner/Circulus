@@ -13,9 +13,9 @@ RoomStart = function()
 	global.paused = true;
 	playerCanUnpause = false;
 	
-	startSequence = layer_sequence_create(layer, 160, 90, Sq_Start);
+	startSequence = layer_sequence_create(layer, 0, 0, Sq_Start);
 	
-	call_later(5, time_source_units_seconds, function()
+	call_later(2.5, time_source_units_seconds, function()
 		{
 			global.paused = false;
 			playerCanUnpause = true;
@@ -36,7 +36,11 @@ Victory = function()
 	playerCanUnpause = false;
 	
 	// Play victory sequence
-	call_later(3.0, time_source_units_seconds, function() { room_goto_next(); });
+	layer_sequence_create(layer, 0, 0, Sq_Victory);
+	call_later(2.0, time_source_units_seconds, function() { room_goto_next(); });
 }
 
-// RoomStart();
+if (room != Tutorial && room != TutorialControls)
+{
+	RoomStart();
+}

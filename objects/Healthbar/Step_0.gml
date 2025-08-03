@@ -1,1 +1,4 @@
-percentage = player.hitPoints / player.maxHitPoints;
+if (instance_exists(player))
+{
+	percentage = player.hitPoints / player.maxHitPoints;
+}
